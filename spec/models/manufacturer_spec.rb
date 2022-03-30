@@ -6,4 +6,9 @@ RSpec.describe Manufacturer, type: :model do
     it { should validate_presence_of :location }
   end
 
+  describe 'relationships' do
+    it { should have_many :manufacturer_items }
+    it { should have_many(:items).through(:manufacturer_items) }
+  end
+    
 end
