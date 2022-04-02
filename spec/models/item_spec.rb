@@ -13,7 +13,7 @@ RSpec.describe Item, type: :model do
   end
 
   describe 'instance methods' do
-    it 'can return a count of its number of manufacturers' do
+    it '#manufacturer_count' do
       project = Project.create!(name: "NAMM 2023", manager: "James Harkins")
       another_new_strat = project.items.create!(name: "The Newest Strat", cost: 1500)
       another_new_paul = project.items.create!(name: "The Newest Paul", cost: 2500)
@@ -23,6 +23,13 @@ RSpec.describe Item, type: :model do
 
       expect(another_new_strat.manufacturer_count).to eq(2)
       expect(another_new_paul.manufacturer_count).to eq(1)
+    end
+
+    it '#make_cost_readable' do
+      project = Project.create!(name: "NAMM 2023", manager: "James Harkins")
+      another_new_strat = project.items.create!(name: "The Newest Strat", cost: 1500)
+
+      expect(another_new_strat.make_cost_readable).to eq(1500.00)
     end
   end
 end
