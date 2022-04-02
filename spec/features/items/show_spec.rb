@@ -15,7 +15,6 @@ RSpec.describe 'item show page' do
       end
 
       it 'i see that items name and cost' do
-        save_and_open_page
         expect(page).to have_content("#{@another_new_strat.name}")
         expect(page).to have_content("Cost: $1500.00")
         expect(page).not_to have_content("#{@another_new_paul.name}")
@@ -29,6 +28,18 @@ RSpec.describe 'item show page' do
       it 'i see a count of the number of manufacturers for the item' do
         expect(page).to have_content("Manufacturer Count: 2")
       end
+    end
+
+    it 'i see a form to add a manufacturer to the item' do
+      expect(page).to have_button("Add Manufacturer to this Item")
+
+      fill_in "New manufacturer", with: "#{@gibson.id}"
+
+      click_button "Add Manufacturer to this Item"
+
+      expect(current_path).to eq("/items/#{@another_new_strat.id}")
+
+      expect(page).to have_content("Manufacturer Count: 3")
     end
   end
 end
