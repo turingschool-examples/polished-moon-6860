@@ -54,4 +54,20 @@ describe 'Manufacturer Index Page' do
     expect(page).to have_content(@manny_2.name)
     expect(page).to have_content(@manny_3.name)
   end
+
+  it 'lists the names of each of the items they belong to' do
+    within "#manufacturer-#{@manny_1.id}" do
+      expect(page).to have_content(@item_1.name)
+      expect(page).to have_content(@item_2.name)
+      expect(page).not_to have_content(@item_3.name)
+      expect(page).not_to have_content(@item_4.name)
+    end
+
+    within "#manufacturer-#{@manny_2.id}" do
+      expect(page).to have_content(@item_3.name)
+      expect(page).to have_content(@item_4.name)
+      expect(page).not_to have_content(@item_1.name)
+      expect(page).not_to have_content(@item_2.name)
+    end
+  end
 end
