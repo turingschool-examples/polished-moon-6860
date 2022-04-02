@@ -38,7 +38,7 @@ RSpec.describe Project, type: :model do
       another_new_sg = gibson.items.create!(name: "The Newest SG", cost: 2009, project_id: project.id)
       another_new_v = gibson.items.create!(name: "The Newest Flying V", cost: 2502, project_id: project.id)
 
-      expect(project.make_average_readable).to eq("$1964.20")
+      expect(project.make_average_readable).to eq("1964.20")
     end
   end
 end
