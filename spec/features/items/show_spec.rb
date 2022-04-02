@@ -15,9 +15,9 @@ RSpec.describe 'item show page' do
       end
 
       it 'i see that items name and cost' do
-        # save_and_open_page
+        save_and_open_page
         expect(page).to have_content("#{@another_new_strat.name}")
-        expect(page).to have_content("Cost: #{@another_new_strat.cost}")
+        expect(page).to have_content("Cost: $1500.00")
         expect(page).not_to have_content("#{@another_new_paul.name}")
         expect(page).not_to have_content("Cost: #{@another_new_paul.cost}")
       end
