@@ -38,6 +38,12 @@ RSpec.describe 'item show page' do
         expect(current_path).to eq("/items/#{@another_new_strat.id}")
 
         expect(page).to have_content("Manufacturer Count: 3")
+
+        visit "/manufacturers"
+
+        within "#manufacturer-#{@daddario.id}" do
+          expect(page).to have_content("#{@another_new_strat.name}")
+        end
       end
     end
   end
