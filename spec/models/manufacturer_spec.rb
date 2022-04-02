@@ -10,5 +10,4 @@ RSpec.describe Manufacturer, type: :model do
     it { should have_many :manufacturer_items }
     it { should have_many(:items).through(:manufacturer_items) }
   end
-    
 end
