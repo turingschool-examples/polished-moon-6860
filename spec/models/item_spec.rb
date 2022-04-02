@@ -29,7 +29,7 @@ RSpec.describe Item, type: :model do
       project = Project.create!(name: "NAMM 2023", manager: "James Harkins")
       another_new_strat = project.items.create!(name: "The Newest Strat", cost: 1500)
 
-      expect(another_new_strat.make_cost_readable).to eq(1500.00)
+      expect(another_new_strat.make_cost_readable).to eq("$1500.00")
     end
   end
 end
