@@ -254,9 +254,8 @@
           null
         ]
       },
-      "/Users/sandiszthieme/turing/2module/independent_challenges/polished-moon-6860/app/models/manufacturer.rb": {
+      "/Users/sandiszthieme/turing/2module/independent_challenges/polished-moon-6860/app/models/project.rb": {
         "lines": [
-          1,
           1,
           1,
           1,
@@ -270,17 +269,22 @@
           null
         ]
       },
-      "/Users/sandiszthieme/turing/2module/independent_challenges/polished-moon-6860/app/models/project.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          null
-        ]
-      },
       "/Users/sandiszthieme/turing/2module/independent_challenges/polished-moon-6860/app/models/item.rb": {
         "lines": [
           1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/sandiszthieme/turing/2module/independent_challenges/polished-moon-6860/app/models/manufacturer.rb": {
+        "lines": [
           1,
           1,
           1,
@@ -296,11 +300,11 @@
           null
         ]
       },
-      "/Users/sandiszthieme/turing/2module/independent_challenges/polished-moon-6860/app/controllers/manufacturers_controller.rb": {
+      "/Users/sandiszthieme/turing/2module/independent_challenges/polished-moon-6860/app/controllers/items_controller.rb": {
         "lines": [
           1,
           1,
-          2,
+          1,
           null,
           null
         ]
@@ -312,6 +316,6 @@
         ]
       }
     },
-    "timestamp": 1648865787
+    "timestamp": 1648866504
   }
 }
