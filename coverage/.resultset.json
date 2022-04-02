@@ -243,6 +243,8 @@
           1,
           null,
           1,
+          null,
+          1,
           null
         ]
       },
@@ -275,25 +277,25 @@
           null,
           null,
           1,
-          0,
-          0,
+          1,
+          1,
           null,
           null,
-          0,
-          0,
+          1,
+          1,
           null,
           null,
           null,
           1,
-          0,
-          0,
-          0,
+          1,
+          1,
+          1,
           null,
           null,
-          0,
-          0,
-          0,
-          0,
+          1,
+          1,
+          1,
+          1,
           null,
           null,
           null,
@@ -421,8 +423,17 @@
           1,
           null
         ]
+      },
+      "/Users/jimbo/turing/2module/challenges/polished-moon-6860/app/controllers/manufacturers_controller.rb": {
+        "lines": [
+          1,
+          1,
+          2,
+          null,
+          null
+        ]
       }
     },
-    "timestamp": 1648859794
+    "timestamp": 1648860068
   }
 }
