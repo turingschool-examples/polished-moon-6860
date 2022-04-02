@@ -20,6 +20,18 @@ describe 'Item Show Page' do
       cost: 1
     )
 
+    @manny_1 = Manufacturer.create!(
+      name: "Manny Won",
+      location: "The World"
+    )
+    @manny_2 = Manufacturer.create!(
+      name: "Manny Won",
+      location: "The World"
+    )
+
+    ManufacturerItem.create!(item_id: @item_2.id, manufacturer_id: @manny_1.id)
+    ManufacturerItem.create!(item_id: @item_2.id, manufacturer_id: @manny_2.id)
+
     visit("/items/#{@item_2.id}")
   end
 
@@ -32,5 +44,9 @@ describe 'Item Show Page' do
 
   it 'shows the project this item belongs to' do
     expect(page).to have_content(@project_2.name)
+  end
+
+  it 'shows the count of the number of manufacturers for this item' do
+    expect(page).to have_content("Manufactureres: 2")
   end
 end

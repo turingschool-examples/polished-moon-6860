@@ -62,7 +62,6 @@ describe 'Manufacturer Index Page' do
       expect(page).not_to have_content(@item_3.name)
       expect(page).not_to have_content(@item_4.name)
     end
-    save_and_open_page
 
     within "#manufacturer-#{@manny_2.id}" do
       expect(page).to have_content(@item_3.name)
