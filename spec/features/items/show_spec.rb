@@ -10,6 +10,7 @@ RSpec.describe 'item show page' do
         @fender = @another_new_strat.manufacturers.create!(name: "Fender Guitars", location: "Los Angeles")
         @ernie_ball = @another_new_strat.manufacturers.create!(name: "Ernie Ball Strings", location: "San Luis Obispo")
         @gibson = @another_new_paul.manufacturers.create!(name: "Gibson", location: "Nashville")
+        @daddario = Manufacturer.create!(name: "Daddario", location: "Los Angeles")
 
         visit "/items/#{@another_new_strat.id}"
       end
@@ -28,18 +29,16 @@ RSpec.describe 'item show page' do
       it 'i see a count of the number of manufacturers for the item' do
         expect(page).to have_content("Manufacturer Count: 2")
       end
-    end
 
-    it 'i see a form to add a manufacturer to the item' do
-      expect(page).to have_button("Add Manufacturer to this Item")
+      it 'i see a form to add a manufacturer to the item' do
+        fill_in "New manufacturer", with: "#{@daddario.id}"
 
-      fill_in "New manufacturer", with: "#{@gibson.id}"
+        click_on "Add Manufacturer to this Item"
 
-      click_button "Add Manufacturer to this Item"
+        expect(current_path).to eq("/items/#{@another_new_strat.id}")
 
-      expect(current_path).to eq("/items/#{@another_new_strat.id}")
-
-      expect(page).to have_content("Manufacturer Count: 3")
+        expect(page).to have_content("Manufacturer Count: 3")
+      end
     end
   end
 end

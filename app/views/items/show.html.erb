@@ -2,3 +2,8 @@
 <h3>Cost: <%= @item.make_cost_readable %></h3>
 <h3>Project: <%= @item.project.name %></h3>
 <p>Manufacturer Count: <%= @item.manufacturer_count %></p>
+
+<%= form_with url: "/items/#{@item.id}", method: :post, local: true do |form| %>
+  <%= form.text_field :new_manufacturer, id: "New manufacturer" %>
+  <%= form.submit 'Add Manufacturer to this Item' %>
+<% end %>
