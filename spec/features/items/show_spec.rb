@@ -40,7 +40,7 @@ RSpec.describe 'item show page' do
         expect(page).to have_content("Manufacturer Count: 3")
 
         visit "/manufacturers"
-
+        
         within "#manufacturer-#{@daddario.id}" do
           expect(page).to have_content("#{@another_new_strat.name}")
         end
