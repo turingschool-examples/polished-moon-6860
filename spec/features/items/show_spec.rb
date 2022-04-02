@@ -29,4 +29,8 @@ describe 'Item Show Page' do
 
     expect(page).not_to have_content(@item_1.name)
   end
+
+  it 'shows the project this item belongs to' do
+    expect(page).to have_content(@project_2.name)
+  end
 end
