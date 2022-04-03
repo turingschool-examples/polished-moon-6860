@@ -1,0 +1,14 @@
+<h1> <%= @item.name %> </h1>
+
+<p> <%= @item.cost %> </p>
+<p> <%= @item.project.name %> </p>
+<p> Number of Manufacturers: <%= @item.manufacturers.count %></p>
+
+<%= form_with url: "/items/#{@item.id}", method: :post, local: true do |form| %>
+  <%= form.label :name %>
+  <%= form.text_field :name %>
+  <%= form.label :location %>
+  <%= form.text_field :location %>
+
+  <%= form.submit "Add manufacturer to item" %>
+<% end %>
