@@ -19,14 +19,14 @@ RSpec.describe "manufacturers index page" do
     expect(page).to have_content("#{ryobi.name}")
     expect(page).to have_content("#{board_maker.name}")
 
-    within "manufacturer-#{ryobi.id}" do
+    within "#manufacturer-#{ryobi.id}" do
       expect(page).to have_content("#{hammer.name}")
       expect(page).to have_content("#{drill.name}")
-      expect(page).to_not have_content("#{board.name}")
+      expect(page).to_not have_content("#{boards.name}")
     end
 
-    within "manufacturer-#{board_maker.id}" do
-      expect(page).to have_content("#{board.name}")
+    within "#manufacturer-#{board_maker.id}" do
+      expect(page).to have_content("#{boards.name}")
       expect(page).to_not have_content("#{hammer.name}")
       expect(page).to_not have_content("#{drill.name}")
     end

@@ -1,0 +1,8 @@
+<% @manufacturers.each do |manu| %>
+  <div id="manufacturer-<%= manu.id %>">
+  <h1><%= manu.name %></h1>
+    <% manu.items.each do |item| %>
+    <h3> <%= item.name %> </h3>
+    <% end %>
+  </div>
+<% end %>
