@@ -23,7 +23,7 @@ RSpec.describe 'when i visit an items show page'do
       expect(page).to have_content(@item_1.name)
       expect(page).to have_content(@item_1.cost)
       expect(page).to have_content(@project_1.name)
-
+# save_and_open_page
     end
   end
 end
