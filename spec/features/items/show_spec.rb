@@ -8,7 +8,7 @@ RSpec.describe "item show page" do
     visit "/items/#{hammer.id}"
 
     expect(page).to have_content("#{hammer.name}")
-    expect(page).to have_content("#{hammer.price}")
+    expect(page).to have_content("#{hammer.cost}")
     expect(page).to have_content("#{fence.name}")
   end
 end

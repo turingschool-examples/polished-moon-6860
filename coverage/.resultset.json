@@ -242,6 +242,7 @@
         "lines": [
           1,
           null,
+          1,
           null
         ]
       },
@@ -356,8 +357,24 @@
           1,
           null
         ]
+      },
+      "/Users/andrewspeth/turing/2module/polished-moon-6860/app/controllers/items_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/andrewspeth/turing/2module/polished-moon-6860/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          null
+        ]
       }
     },
-    "timestamp": 1648998692
+    "timestamp": 1648999221
   }
 }
