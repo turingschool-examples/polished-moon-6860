@@ -1,6 +1,6 @@
-class CreateItemManufacturers < ActiveRecord::Migration[5.2]
+class CreateManufacturerItems < ActiveRecord::Migration[5.2]
   def change
-    create_table :item_manufacturers do |t|
+    create_table :manufacturer_items do |t|
       t.references :item, foreign_key: true
       t.references :manufacturer, foreign_key: true
     end
