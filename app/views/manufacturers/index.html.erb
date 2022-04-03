@@ -1,0 +1,15 @@
+<h1>Manufacturers</h1>
+<ul>
+  <% @manufacturers.each do |manufacturer| %>
+  <li>
+    <h2>Name: <%= manufacturer.name %></h2>
+    <h2>Location: <%= manufacturer.location %></h2>
+    <h2>Items: </h2>
+      <ul>
+        <% manufacturer.items.each do |item| %>
+          <li><%= item.name %></li>
+        <% end %>
+      </ul>
+  <% end %>
+  </li>
+</ul>

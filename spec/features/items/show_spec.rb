@@ -8,7 +8,7 @@ RSpec.describe "items show" do
 
   it "shows item name and cost" do
     visit "/items/#{@item_1.id}"
-    save_and_open_page
+    # save_and_open_page
     expect(page).to have_content("Anvil")
     expect(page).to have_content("200")
     expect(page).to have_content("Eat Road Runner")

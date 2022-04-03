@@ -15,12 +15,11 @@ RSpec.describe "manufacturers index" do
   end
 
   it "lists manufacturer names and item names" do
-    vist "/manufacturers"
-
+    visit "/manufacturers"
+    # save_and_open_page
     expect(page).to have_content("ACME")
     expect(page).to have_content("Offbrand ACME")
-    expect(page).to have_content("ACME\nItems: Anvil")
-    expect(page).to_not have_content("ACME\nItems: Anvil, Tramploline")
-    expect(page).to have_content("Offbrand Acme\nItems: Anvil, Trampoline")
+    expect(page).to_not have_content("Name: Offbrand ACME\nLocation: Toonville USA\nItems:\nAnvil Trampoline")
+    expect(page).to have_content("Name: ACME\nLocation: Toonville USA\nItems:\nAnvil Trampoline")
   end
 end
