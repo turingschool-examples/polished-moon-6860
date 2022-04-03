@@ -18,15 +18,15 @@ RSpec.describe 'manufacturers index page' do
     uk_supply_2 = item_4.manufacturers.create(name: 'Game Supply Co', location: 'UK')
     ca_supply = item_5.manufacturers.create(name: 'Art Supply Co', location: 'CA')
     visit '/manufacturers'
-    expect(page).to have_content(manufacturer_1.name)
+    expect(page).to have_content(usa_supply_1.name)
     expect(page.text.index('Toy Supply Co')).to be < page.text.index('Ball')
     expect(page.text.index('Ball')).to be < page.text.index('Game')
 
-    expect(page).to have_content(manufacturer_2.name)
+    expect(page).to have_content(uk_supply_1.name)
     expect(page.text.index('Game Supply Co')).to be < page.text.index('Toy car')
     expect(page.text.index('Toy car')).to be < page.text.index('Nerf')
 
-    expect(page).to have_content(manufacturer_3.name)
+    expect(page).to have_content(ca_supply.name)
     expect(page.text.index('Game Supply Co')).to be < page.text.index('Toy car')
     expect(page.text.index('Art Supply Co')).to be < page.text.index('Board game')
   end
