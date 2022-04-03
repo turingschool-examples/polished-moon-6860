@@ -11,6 +11,8 @@ require 'rails_helper'
 RSpec.describe 'when i visit an items show page'do
 
   before do
+    @hammer = Manufacturer.create!(name:"Hammers R us", location:"123 Anywhere USA")
+    @drill = Manufacturer.create!(name:"Drills R us", location:"123 AnywhereElse USA")
 
     @project_1 = Project.create!(name:"John House", manager: "Bob")
 

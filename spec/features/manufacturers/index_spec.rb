@@ -33,7 +33,6 @@ RSpec.describe 'when I visit the manufacturers index page' do
 
     end
     it 'each manufacturer name list all names of items' do
-        save_and_open_page
 #      within "manufacturer-#{@hammer.id}" do
         expect(page).to have_content(@item_1.name)
         expect(page).to have_content(@item_2.name)
