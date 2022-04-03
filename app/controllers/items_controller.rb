@@ -7,9 +7,4 @@ class ItemsController < ApplicationController
     # binding.pry
   end
 
-  private
-
-  def item_params
-    params.permit(:name, :cost)
-  end
 end
