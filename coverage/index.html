@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2022-04-03T13:09:02-06:00">2022-04-03T13:09:02-06:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2022-04-03T13:13:35-06:00">2022-04-03T13:13:35-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -82,7 +82,7 @@
           </tr>
         
           <tr class="t-file">
-            <td class="strong t-file__name"><a href="#2506582fc440d33c9c940b34b8afa8310a5f94ba" class="src_link" title="app/controllers/manufacturers_controller.rb">app/controllers/manufacturers_controller.rb</a></td>
+            <td class="strong t-file__name"><a href="#219f21fc1cdbafbb971dd902903373c491121c5d" class="src_link" title="app/controllers/items_controller.rb">app/controllers/items_controller.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
             <td class="cell--number">5</td>
             <td class="cell--number">3</td>
@@ -382,9 +382,9 @@
 </div>
 
       
-        <div class="source_table" id="2506582fc440d33c9c940b34b8afa8310a5f94ba">
+        <div class="source_table" id="219f21fc1cdbafbb971dd902903373c491121c5d">
   <div class="header">
-    <h3>app/controllers/manufacturers_controller.rb</h3>
+    <h3>app/controllers/items_controller.rb</h3>
     <h4>
       <span class="green">
   100.0%
@@ -415,7 +415,7 @@
 
             
 
-            <code class="ruby">class ManufacturersController &lt; ApplicationController</code>
+            <code class="ruby">class ItemsController &lt; ApplicationController</code>
           </li>
         </div>
       
@@ -426,7 +426,7 @@
 
             
 
-            <code class="ruby">  def index</code>
+            <code class="ruby">  def show</code>
           </li>
         </div>
       
@@ -437,7 +437,7 @@
 
             
 
-            <code class="ruby">    @manufacturers = Manufacturer.all</code>
+            <code class="ruby">    @item = Item.find(params[:id])</code>
           </li>
         </div>
       

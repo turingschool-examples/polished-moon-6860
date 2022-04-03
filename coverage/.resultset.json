@@ -296,7 +296,7 @@
           null
         ]
       },
-      "/Users/phillipkamps/turing/2module/ics/polished-moon-6860/app/controllers/manufacturers_controller.rb": {
+      "/Users/phillipkamps/turing/2module/ics/polished-moon-6860/app/controllers/items_controller.rb": {
         "lines": [
           1,
           1,
@@ -312,6 +312,6 @@
         ]
       }
     },
-    "timestamp": 1649012942
+    "timestamp": 1649013215
   }
 }
