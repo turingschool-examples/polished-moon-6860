@@ -9,10 +9,7 @@ RSpec.describe 'item show page', type: :feature do
     expect(page).to have_content(item_1.cost)
     expect(page).to have_content(project_1.name)
   end
-  # As a visitor,
-  # When I visit an item's show page
-  # I see a count of the number of manufacturers for this item
-
+  
   it 'displays a count of the number of manufacturers for the item' do
     project_1 = Project.create!(name: 'New Summer Toy', manager: 'John Doe')
     item_1 = project_1.items.create!(name: 'Ball', cost: 5)
