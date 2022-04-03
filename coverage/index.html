@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2022-04-03T09:57:22-06:00">2022-04-03T09:57:22-06:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2022-04-03T10:02:25-06:00">2022-04-03T10:02:25-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -23,14 +23,14 @@
     <span class="group_name">All Files</span>
     (<span class="covered_percent">
       <span class="green">
-  100.0%
+  99.35%
 </span>
 
      </span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.16
+         1.14
        </span>
     </span> hits/line
     )
@@ -39,15 +39,15 @@
   <a name="AllFiles"></a>
 
   <div>
-    <b>28</b> files in total.
+    <b>29</b> files in total.
   </div>
 
   <div class="t-line-summary">
-    <b>139</b> relevant lines,
-    <span class="green"><b>139</b> lines covered</span> and
-    <span class="red"><b>0</b> lines missed. </span>
+    <b>154</b> relevant lines,
+    <span class="green"><b>153</b> lines covered</span> and
+    <span class="red"><b>1</b> lines missed. </span>
     (<span class="green">
-  100.0%
+  99.35%
 </span>
 )
   </div>
@@ -335,6 +335,17 @@
           </tr>
         
           <tr class="t-file">
+            <td class="strong t-file__name"><a href="#d245537c08cf3f8cc3fa8dcb0300791a2e46f835" class="src_link" title="spec/features/projects/show_spec.rb">spec/features/projects/show_spec.rb</a></td>
+            <td class="yellow strong cell--number t-file__coverage">88.89 %</td>
+            <td class="cell--number">14</td>
+            <td class="cell--number">9</td>
+            <td class="cell--number">8</td>
+            <td class="cell--number">1</td>
+            <td class="cell--number">0.89</td>
+            
+          </tr>
+        
+          <tr class="t-file">
             <td class="strong t-file__name"><a href="#e6de63d75b9850c894f710f9d0d8ff89b010f077" class="src_link" title="spec/models/item_spec.rb">spec/models/item_spec.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
             <td class="cell--number">36</td>
@@ -370,11 +381,11 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#22486c04412001198f299558435407b202c86c4e" class="src_link" title="spec/models/project_spec.rb">spec/models/project_spec.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">12</td>
-            <td class="cell--number">7</td>
-            <td class="cell--number">7</td>
+            <td class="cell--number">21</td>
+            <td class="cell--number">13</td>
+            <td class="cell--number">13</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">1.43</td>
+            <td class="cell--number">1.23</td>
             
           </tr>
         
@@ -4120,6 +4131,191 @@
 </div>
 
       
+        <div class="source_table" id="d245537c08cf3f8cc3fa8dcb0300791a2e46f835">
+  <div class="header">
+    <h3>spec/features/projects/show_spec.rb</h3>
+    <h4>
+      <span class="yellow">
+  88.89%
+</span>
+
+      lines covered
+    </h4>
+
+    
+
+    <div class="t-line-summary">
+      <b>9</b> relevant lines.
+      <span class="green"><b>8</b> lines covered</span> and
+      <span class="red"><b>1</b> lines missed.</span>
+    </div>
+
+    
+
+  </div>
+
+  <pre>
+    <ol>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="1">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">require &#39;rails_helper&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="2">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="3">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">RSpec.describe &quot;item show page&quot; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="4">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  it &quot;displays the item&#39;s name, cost, and associated projects&quot; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="5">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    fence = Project.create!(name: &quot;fence repair&quot;, manager: &quot;Bob the Builder&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="6">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    hammer = Item.create!(name: &quot;hammer&quot;, cost: 3, project_id: fence.id)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="7">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    drill = Item.create!(name: &quot;drill&quot;, cost: 5, project_id: fence.id)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="8">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    boards = Item.create!(name: &quot;boards&quot;, cost: 4, project_id: fence.id)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="9">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="10">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    visit &quot;/projects/#{fence.id}&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="11">
+            
+            
+
+            
+
+            <code class="ruby">    </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="12">
+            
+            
+
+            
+
+            <code class="ruby">    expect(page).to have_content(&quot;#{fence.average_item_price}&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="13">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="14">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+    </ol>
+  </pre>
+</div>
+
+      
         <div class="source_table" id="e6de63d75b9850c894f710f9d0d8ff89b010f077">
   <div class="header">
     <h3>spec/models/item_spec.rb</h3>
@@ -4865,8 +5061,8 @@
     
 
     <div class="t-line-summary">
-      <b>7</b> relevant lines.
-      <span class="green"><b>7</b> lines covered</span> and
+      <b>13</b> relevant lines.
+      <span class="green"><b>13</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -5000,6 +5196,105 @@
       
         <div>
           <li class="never" data-hits="" data-linenumber="12">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="13">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  it &quot;displays the item&#39;s name, cost, and associated projects&quot; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="14">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    fence = Project.create!(name: &quot;fence repair&quot;, manager: &quot;Bob the Builder&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="15">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    hammer = Item.create!(name: &quot;hammer&quot;, cost: 3, project_id: fence.id)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="16">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    drill = Item.create!(name: &quot;drill&quot;, cost: 5, project_id: fence.id)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="17">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    boards = Item.create!(name: &quot;boards&quot;, cost: 4, project_id: fence.id)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="18">
+            
+            
+
+            
+
+            <code class="ruby">    </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="19">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    expect(fence.average_item_price).to eq(4.00)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="20">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="21">
             
             
 
