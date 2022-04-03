@@ -5,3 +5,5 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+@project = Project.create!(name: "Eat Road Runner", manager: "Wile E. Coyote")
+@item_1 = @project.items.create!(name: "Trampoline", cost: 200)
