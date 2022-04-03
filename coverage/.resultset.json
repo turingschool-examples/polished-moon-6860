@@ -254,53 +254,6 @@
           null
         ]
       },
-      "/Users/johnnybowman/turing/2mod/ic/polished-moon-6860/spec/features/manufacturers/index_spec.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          1,
-          1,
-          null,
-          1,
-          1,
-          1,
-          null,
-          null,
-          1,
-          1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/johnnybowman/turing/2mod/ic/polished-moon-6860/spec/models/item_spec.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          2,
-          2,
-          null,
-          null,
-          1,
-          2,
-          2,
-          2,
-          null,
-          null
-        ]
-      },
       "/Users/johnnybowman/turing/2mod/ic/polished-moon-6860/app/models/item.rb": {
         "lines": [
           1,
@@ -308,6 +261,10 @@
           1,
           1,
           1,
+          null,
+          1,
+          2,
+          null,
           null
         ]
       },
@@ -318,41 +275,11 @@
           null
         ]
       },
-      "/Users/johnnybowman/turing/2mod/ic/polished-moon-6860/spec/models/manufacturer_item_spec.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          2,
-          2,
-          null,
-          null
-        ]
-      },
-      "/Users/johnnybowman/turing/2mod/ic/polished-moon-6860/app/models/manufacturer_item.rb": {
+      "/Users/johnnybowman/turing/2mod/ic/polished-moon-6860/app/models/project.rb": {
         "lines": [
           1,
           1,
           1,
-          null
-        ]
-      },
-      "/Users/johnnybowman/turing/2mod/ic/polished-moon-6860/spec/models/manufacturer_spec.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          2,
-          2,
-          null,
-          null,
-          1,
-          2,
-          2,
-          null,
-          null,
           null
         ]
       },
@@ -365,67 +292,15 @@
           null
         ]
       },
-      "/Users/johnnybowman/turing/2mod/ic/polished-moon-6860/spec/models/project_spec.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          2,
-          2,
-          null,
-          null,
-          1,
-          2,
-          null,
-          null
-        ]
-      },
-      "/Users/johnnybowman/turing/2mod/ic/polished-moon-6860/app/models/project.rb": {
+      "/Users/johnnybowman/turing/2mod/ic/polished-moon-6860/app/models/manufacturer_item.rb": {
         "lines": [
           1,
           1,
           1,
-          null
-        ]
-      },
-      "/Users/johnnybowman/turing/2mod/ic/polished-moon-6860/app/controllers/items_controller.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          null,
-          1,
-          1,
-          null,
-          null,
-          null,
-          1,
-          null,
-          1,
-          0,
-          null,
-          null
-        ]
-      },
-      "/Users/johnnybowman/turing/2mod/ic/polished-moon-6860/app/controllers/application_controller.rb": {
-        "lines": [
-          1,
-          null
-        ]
-      },
-      "/Users/johnnybowman/turing/2mod/ic/polished-moon-6860/app/controllers/manufacturers_controller.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          null,
-          1,
-          null,
           null
         ]
       }
     },
-    "timestamp": 1649016697
+    "timestamp": 1649017087
   }
 }
