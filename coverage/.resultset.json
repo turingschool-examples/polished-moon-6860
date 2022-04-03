@@ -251,10 +251,8 @@
           null
         ]
       },
-      "/Users/phillipkamps/turing/2module/ics/polished-moon-6860/app/models/item.rb": {
+      "/Users/phillipkamps/turing/2module/ics/polished-moon-6860/app/models/project.rb": {
         "lines": [
-          1,
-          1,
           1,
           1,
           1,
@@ -268,71 +266,10 @@
           null
         ]
       },
-      "/Users/phillipkamps/turing/2module/ics/polished-moon-6860/spec/models/manufacturer_item_spec.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          2,
-          2,
-          null,
-          null
-        ]
-      },
-      "/Users/phillipkamps/turing/2module/ics/polished-moon-6860/app/models/manufacturer_item.rb": {
+      "/Users/phillipkamps/turing/2module/ics/polished-moon-6860/app/models/item.rb": {
         "lines": [
           1,
           1,
-          1,
-          null
-        ]
-      },
-      "/Users/phillipkamps/turing/2module/ics/polished-moon-6860/spec/models/manufacturer_spec.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          2,
-          2,
-          null,
-          null,
-          1,
-          2,
-          2,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/phillipkamps/turing/2module/ics/polished-moon-6860/app/models/manufacturer.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          1,
-          null
-        ]
-      },
-      "/Users/phillipkamps/turing/2module/ics/polished-moon-6860/spec/models/project_spec.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          2,
-          2,
-          null,
-          null,
-          1,
-          2,
-          null,
-          null
-        ]
-      },
-      "/Users/phillipkamps/turing/2module/ics/polished-moon-6860/app/models/project.rb": {
-        "lines": [
           1,
           1,
           1,
@@ -340,6 +277,6 @@
         ]
       }
     },
-    "timestamp": 1649008366
+    "timestamp": 1649009165
   }
 }
