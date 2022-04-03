@@ -242,12 +242,70 @@
         "lines": [
           1,
           null,
+          1,
+          null,
+          null,
           null
         ]
       },
       "/Users/antoniosalmeron/turing/2module/challenges/polished-moon-6860/app/helpers/application_helper.rb": {
         "lines": [
           1,
+          null
+        ]
+      },
+      "/Users/antoniosalmeron/turing/2module/challenges/polished-moon-6860/spec/features/manufacturers/manufacturers_spec.rb": {
+        "lines": [
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          null
+        ]
+      },
+      "/Users/antoniosalmeron/turing/2module/challenges/polished-moon-6860/spec/models/item_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          2,
+          2,
+          null,
+          null,
+          1,
+          2,
+          2,
+          2,
+          null,
           null
         ]
       },
@@ -338,8 +396,24 @@
           1,
           null
         ]
+      },
+      "/Users/antoniosalmeron/turing/2module/challenges/polished-moon-6860/app/controllers/items_controller.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/antoniosalmeron/turing/2module/challenges/polished-moon-6860/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          null
+        ]
       }
     },
-    "timestamp": 1649012833
+    "timestamp": 1649013994
   }
 }
