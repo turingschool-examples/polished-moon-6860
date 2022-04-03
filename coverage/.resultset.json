@@ -242,12 +242,48 @@
         "lines": [
           1,
           1,
+          1,
           null
         ]
       },
       "/Users/johnhennerich/turing/2mod/IC/polished-moon-6860/app/helpers/application_helper.rb": {
         "lines": [
           1,
+          null
+        ]
+      },
+      "/Users/johnhennerich/turing/2mod/IC/polished-moon-6860/spec/features/manufacturers/index_spec.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          1,
+          2,
+          2,
+          null,
+          2,
+          null,
+          2,
+          2,
+          null,
+          2,
+          null,
+          1,
+          1,
+          null,
+          0,
+          0,
+          0,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
           null
         ]
       },
@@ -374,8 +410,19 @@
           1,
           null
         ]
+      },
+      "/Users/johnhennerich/turing/2mod/IC/polished-moon-6860/app/controllers/manufacturers_controller.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          2,
+          null,
+          null,
+          null
+        ]
       }
     },
-    "timestamp": 1649021489
+    "timestamp": 1649022741
   }
 }
