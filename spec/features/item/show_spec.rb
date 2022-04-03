@@ -9,7 +9,7 @@ RSpec.describe "Item show page", type: :feature do
     visit "/items/#{ephone.id}"
 
     expect(page).to have_content(ephone.name)
-    expect(page).to have_content(ephone.price)
+    expect(page).to have_content(ephone.cost)
     # expect(page).to have_content(ephone.#project name)
   end
 end
