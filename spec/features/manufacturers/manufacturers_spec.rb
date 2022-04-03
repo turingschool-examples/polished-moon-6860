@@ -16,9 +16,9 @@ RSpec.describe 'Manufacturer page' do
     manufacturer_item_2 = ManufacturerItem.create!(manufacturer_id: manufacturer_1.id, item_id: item2.id)
     manufacturer_item_3 = ManufacturerItem.create!(manufacturer_id: manufacturer_2.id, item_id: item3.id)
     manufacturer_item_4 = ManufacturerItem.create!(manufacturer_id: manufacturer_2.id, item_id: item4.id)
-    manufacturer_item_5 = ManufacturerItem.create!(manufacturer_id: manufacturer_1.id, item_id: item5.id)
+    manufacturer_item_5 = ManufacturerItem.create!(manufacturer_id: manufacturer_3.id, item_id: item5.id)
     visit "/manufacturers"
-
+    save_and_open_page
     expect(page).to have_content('Apple')
     expect(page).to have_content('CPU')
     expect(page).to have_content('RAM')

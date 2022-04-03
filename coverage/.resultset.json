@@ -244,7 +244,7 @@
           null,
           1,
           null,
-          null,
+          1,
           null
         ]
       },
@@ -276,17 +276,17 @@
           1,
           1,
           1,
+          1,
+          1,
+          1,
+          1,
           null,
-          0,
-          0,
-          0,
+          1,
+          1,
+          1,
           null,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
+          1,
+          1,
           null,
           null
         ]
@@ -412,8 +412,18 @@
           1,
           null
         ]
+      },
+      "/Users/antoniosalmeron/turing/2module/challenges/polished-moon-6860/app/controllers/manufacturers_controller.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          null,
+          null
+        ]
       }
     },
-    "timestamp": 1649013994
+    "timestamp": 1649014739
   }
 }
