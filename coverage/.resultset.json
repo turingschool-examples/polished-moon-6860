@@ -241,7 +241,7 @@
       "/Users/johnhennerich/turing/2mod/IC/polished-moon-6860/config/routes.rb": {
         "lines": [
           1,
-          null,
+          1,
           null
         ]
       },
@@ -357,8 +357,24 @@
           1,
           null
         ]
+      },
+      "/Users/johnhennerich/turing/2mod/IC/polished-moon-6860/app/controllers/items_controller.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/johnhennerich/turing/2mod/IC/polished-moon-6860/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          null
+        ]
       }
     },
-    "timestamp": 1649020833
+    "timestamp": 1649021094
   }
 }
