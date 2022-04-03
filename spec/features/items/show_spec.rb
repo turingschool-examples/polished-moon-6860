@@ -50,8 +50,8 @@ RSpec.describe "item show page" do
     
     expect(page).to have_content("Manufacturer Count: 1")
     
-    fill_in 'Manufacturer id', with: "#{hammer_co.id}"
-    click_on "Add"
+    fill_in 'Manufacturer', with: "#{hammer_co.id}"
+    click_on "Save"
     
     expect(page).to have_content("Manufacturer Count: 2")
   end
