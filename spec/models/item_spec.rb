@@ -12,7 +12,7 @@ RSpec.describe Item, type: :model do
     it { should have_many(:manufacturers).through(:manufacturer_items) }
   end
 
-  describe 'class methods' do
+  describe 'instance methods' do
     it 'has a count of manufacturers' do
       project_1 = Project.create!(name: 'New Summer Toy', manager: 'John Doe')
       item_1 = project_1.items.create!(name: 'Ball', cost: 5)
