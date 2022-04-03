@@ -1,0 +1,10 @@
+<h1>Item: <%= @item.name %> </h1>
+<h3>Price <%= @item.cost %> </h3>
+<h3>Project: <%= @project.name %>
+<h3>Manufacturer Count: <%= @item.manufacturer_count %> </h3>
+
+<%= form_with url: "/items/#{@item.id}", method: :patch, local: :true do |form| %>
+<%= form.label :manufacturer %>
+<%= form.text_field :manufacturer %>
+<%= form.submit %>
+<% end %>
