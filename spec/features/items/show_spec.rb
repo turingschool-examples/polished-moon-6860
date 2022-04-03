@@ -56,12 +56,3 @@ RSpec.describe "item show page" do
     expect(page).to have_content("Manufacturer Count: 2")
   end
 end
-# As a visitor,
-# When I visit a item's show page
-# I see a form to add a manufacturer to this project
-# When I fill out a field with an existing manufacturer's id
-# And hit "Add manufacturer to item"
-# I'm taken back to the item's show page
-# And I see that the number of manufacturers has increased by 1
-# And when I visit the manufacturers index page
-# I see that item listed under that manufacturer's name

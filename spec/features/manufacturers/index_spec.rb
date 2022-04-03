@@ -62,8 +62,3 @@ RSpec.describe "manufacturers index page" do
     end
   end
 end
-
-# As a visitor,
-# When I visit the manufacturers index page ("/manufacturers")
-# I see a list of names of all the manufacturers
-# And under each manufacturers  name I see a list of all of the names of the items they belong to.
