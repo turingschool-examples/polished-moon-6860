@@ -3,6 +3,8 @@ class CreateManufacturerItems < ActiveRecord::Migration[5.2]
     create_table :manufacturer_items do |t|
       t.references :manufacturer, foreign_key: true
       t.references :item, foreign_key: true
+
+      t.timestamps
     end
   end
 end
