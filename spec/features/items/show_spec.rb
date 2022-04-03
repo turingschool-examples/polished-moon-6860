@@ -38,4 +38,31 @@ RSpec.describe 'Item Show page' do
     visit "/items/#{item5.id}"
     expect(page).to have_content('Number of Manufacturers: 1')
   end
+
+  it ' has form to fill out to add manufacturer to project' do
+    project = Project.create!(name: 'Build4Kids', manager: 'Joe')
+    item1 = project.items.create!(name: 'CPU', cost: '100')
+    item2 = project.items.create!(name: 'RAM', cost: '50')
+    item3 = project.items.create!(name: 'HardDrive', cost: '10')
+    item4 = project.items.create!(name: 'SSD', cost: '10')
+    item5 = project.items.create!(name: 'HDMI', cost: '5')
+    manufacturer_1 = Manufacturer.create!(name: 'Apple', location: 'China')
+    manufacturer_2 = Manufacturer.create!(name: 'IBM', location: 'USA')
+    manufacturer_3 = Manufacturer.create!(name: 'Microsoft', location: 'Germany')
+    manufacturer_item_1 = ManufacturerItem.create!(manufacturer_id: manufacturer_1.id, item_id: item1.id)
+    manufacturer_item_1 = ManufacturerItem.create!(manufacturer_id: manufacturer_2.id, item_id: item1.id)
+    manufacturer_item_1 = ManufacturerItem.create!(manufacturer_id: manufacturer_3.id, item_id: item1.id)
+    manufacturer_item_2 = ManufacturerItem.create!(manufacturer_id: manufacturer_1.id, item_id: item2.id)
+    manufacturer_item_3 = ManufacturerItem.create!(manufacturer_id: manufacturer_2.id, item_id: item2.id)
+    manufacturer_item_4 = ManufacturerItem.create!(manufacturer_id: manufacturer_2.id, item_id: item4.id)
+    manufacturer_item_5 = ManufacturerItem.create!(manufacturer_id: manufacturer_3.id, item_id: item5.id)
+
+    visit "/items/#{item1.id}"
+    fill_in('Name', with: 'Google')
+    fill_in('Location', with: 'New York')
+    click_button('Add manufacturer to item')
+
+    expect(current_path).to eq("/items/#{item1.id}")
+
+  end
 end
