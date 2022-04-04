@@ -11,7 +11,7 @@ RSpec.describe Manufacturer, type: :model do
     @driver_co = Manufacturer.create!(name: "Screwdriver Man", location: "Denver")
 
     @fence = Project.create!(name: 'New Fence Project', manager: 'Skeeter')
-    # hammer = fence.items.create!(name: 'Big Ole Hammer', cost: 55)
+
     @hammer = @fence.items.create!(name: 'Big Ole Hammer', cost: 55)
     @screw = @fence.items.create!(name: 'A Screwdriver', cost: 17)
     @wrench = @fence.items.create!(name: 'This Wrench', cost: 35)
@@ -30,11 +30,8 @@ RSpec.describe Manufacturer, type: :model do
     @d_2 = ManufacturerItem.create!(item: @drill, manufacturer: @driver_co)
     @d_3 = ManufacturerItem.create!(item: @screw, manufacturer: @driver_co)
     @d_4 = ManufacturerItem.create!(item: @putty, manufacturer: @driver_co)
-
-
-
-
   end
+
   describe 'validations' do
     it { should validate_presence_of :name }
     it { should validate_presence_of :location }
@@ -50,8 +47,5 @@ RSpec.describe Manufacturer, type: :model do
     it 'returns all a manufacturers associated items' do
       expect(@hammer_co.all_items).to eq([@hammer, @putty])
     end
-
-
   end
-
 end

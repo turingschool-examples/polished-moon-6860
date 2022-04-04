@@ -51,7 +51,5 @@ RSpec.describe 'Items show page' do
       expect(page).to have_content("Project: #{@fence.name}")
       expect(page).to have_content("Number of Manufacturers: #{@putty.manufacturer_count}")
     end
-
   end
-
 end
