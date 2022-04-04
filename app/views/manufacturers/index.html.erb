@@ -1,0 +1,8 @@
+<% @manufacturers.each do |manufacturer| %>
+	<section id = "Manufacturer-<%=manufacturer.id%>">
+	<h3>Manufacturer: <%= manufacturer.name %></h3>
+	<p>Items: <%= manufacturer.list_items %></p>
+
+	</section>
+
+<%end  %>
