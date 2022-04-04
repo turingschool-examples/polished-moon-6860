@@ -2,6 +2,10 @@ require 'rails_helper'
 
 RSpec.describe 'Items show page' do
   before do
+    Item.destroy_all
+    Project.destroy_all
+    Manufacturer.destroy_all
+    ManufacturerItem.destroy_all
     @hammer_co = Manufacturer.create!(name: "Hammer Company", location: "Turkey Town")
     @wrench_inc = Manufacturer.create!(name: "Wrench Inc.", location: "West City")
     @driver_co = Manufacturer.create!(name: "Screwdriver Man", location: "Denver")
@@ -32,7 +36,7 @@ RSpec.describe 'Items show page' do
     it 'I see the items name and cost, and name of project it belongs to' do
 
       visit "/items/#{@hammer.id}"
-      # save_and_open_page
+
       expect(page).to have_content("Name: #{@hammer.name}")
       expect(page).to have_content("Cost: #{@hammer.cost}")
       expect(page).to have_content("Project: #{@fence.name}")
@@ -42,15 +46,10 @@ RSpec.describe 'Items show page' do
 
       visit "/items/#{@putty.id}"
 
-      save_and_open_page
-
       expect(page).to have_content("Name: #{@putty.name}")
       expect(page).to have_content("Cost: #{@putty.cost}")
       expect(page).to have_content("Project: #{@fence.name}")
       expect(page).to have_content("Number of Manufacturers: #{@putty.manufacturer_count}")
-
-
-
     end
 
   end

@@ -2,6 +2,10 @@ require 'rails_helper'
 
 RSpec.describe Item, type: :model do
   before do
+    Item.destroy_all
+    Project.destroy_all
+    Manufacturer.destroy_all
+    ManufacturerItem.destroy_all
     @hammer_co = Manufacturer.create!(name: "Hammer Company", location: "Turkey Town")
     @wrench_inc = Manufacturer.create!(name: "Wrench Inc.", location: "West City")
     @driver_co = Manufacturer.create!(name: "Screwdriver Man", location: "Denver")
@@ -39,7 +43,7 @@ RSpec.describe Item, type: :model do
     it { should have_many(:manufacturers).through(:manufacturer_items) }
   end
 
-  describe 'methods' do
+  describe 'instance methods' do
 
     it 'gives the count of an items number of manufacturers' do
       expect(@putty.manufacturer_count).to eq(3)

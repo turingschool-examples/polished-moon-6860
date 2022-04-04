@@ -2,12 +2,16 @@ require 'rails_helper'
 
 RSpec.describe 'manufacturers index page' do
   before do
+    Item.destroy_all
+    Project.destroy_all
+    Manufacturer.destroy_all
+    ManufacturerItem.destroy_all
     @hammer_co = Manufacturer.create!(name: "Hammer Company", location: "Turkey Town")
     @wrench_inc = Manufacturer.create!(name: "Wrench Inc.", location: "West City")
     @driver_co = Manufacturer.create!(name: "Screwdriver Man", location: "Denver")
 
     @fence = Project.create!(name: 'New Fence Project', manager: 'Skeeter')
-    # hammer = fence.items.create!(name: 'Big Ole Hammer', cost: 55)
+
     @hammer = @fence.items.create!(name: 'Big Ole Hammer', cost: 55)
     @screw = @fence.items.create!(name: 'A Screwdriver', cost: 17)
     @wrench = @fence.items.create!(name: 'This Wrench', cost: 35)
@@ -32,8 +36,6 @@ RSpec.describe 'manufacturers index page' do
     it 'I see a list of names of all manufacturers, each as items they belong to' do
       visit "/manufacturers"
 
-      # save_and_open_page
-
       expect(page).to have_content("Company Name: #{@hammer_co.name}")
       expect(page).to have_content("Company Name: #{@wrench_inc.name}")
       expect(page).to have_content("Company Name: #{@driver_co.name}")
@@ -42,18 +44,6 @@ RSpec.describe 'manufacturers index page' do
         expect(page).to have_content("Item Name: #{@hammer.name}")
         expect(page).to have_content("Item Name: #{@putty.name}")
       end
-
-
     end
-
-
-
-
-
-
-
-
   end
-
-
 end

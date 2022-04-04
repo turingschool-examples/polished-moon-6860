@@ -45,7 +45,7 @@ RSpec.describe Manufacturer, type: :model do
     it { should have_many(:items).through(:manufacturer_items) }
   end
 
-  describe 'methods' do
+  describe 'instance methods' do
 
     it 'returns all a manufacturers associated items' do
       expect(@hammer_co.all_items).to eq([@hammer, @putty])
