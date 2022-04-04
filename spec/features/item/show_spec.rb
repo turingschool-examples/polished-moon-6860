@@ -18,10 +18,8 @@ RSpec.describe 'item show' do
       expect(page).to have_content(@project.name)
     end
     it 'shows count of manufacturers' do
-      within("#manufacturer-count") do
-        expect(page).to have_content("Manufacturer count:")
-        expect(page).to have_content(2)
-      end
+      expect(page).to have_content("Manufacturer count:")
+      expect(page).to have_content(2)
     end
   end
 end
