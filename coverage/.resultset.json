@@ -252,8 +252,9 @@
           null
         ]
       },
-      "/Users/alexrandolph/turing/2module/ICs/polished-moon-6860/app/models/project.rb": {
+      "/Users/alexrandolph/turing/2module/ICs/polished-moon-6860/app/models/manufacturer.rb": {
         "lines": [
+          1,
           1,
           1,
           1,
@@ -262,6 +263,14 @@
       },
       "/Users/alexrandolph/turing/2module/ICs/polished-moon-6860/app/models/application_record.rb": {
         "lines": [
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/alexrandolph/turing/2module/ICs/polished-moon-6860/app/models/project.rb": {
+        "lines": [
+          1,
           1,
           1,
           null
@@ -277,30 +286,15 @@
           null
         ]
       },
-      "/Users/alexrandolph/turing/2module/ICs/polished-moon-6860/app/controllers/items_controller.rb": {
+      "/Users/alexrandolph/turing/2module/ICs/polished-moon-6860/app/models/manufacturer_item.rb": {
         "lines": [
           1,
-          null,
-          null,
-          null,
           1,
-          1,
-          1,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/alexrandolph/turing/2module/ICs/polished-moon-6860/app/controllers/application_controller.rb": {
-        "lines": [
           1,
           null
         ]
       }
     },
-    "timestamp": 1649089441
+    "timestamp": 1649090859
   }
 }
