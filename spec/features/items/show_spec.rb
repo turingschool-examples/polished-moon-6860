@@ -32,7 +32,6 @@ RSpec.describe 'item#show', type: :feature do
   end
 
   it 'shows count of manufacturers for specific item' do
-    save_and_open_page
     expect(page).to have_content('Manufacturers: 1')
   end
 end
