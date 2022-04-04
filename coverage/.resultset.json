@@ -243,6 +243,8 @@
           1,
           null,
           1,
+          null,
+          1,
           null
         ]
       },
@@ -293,8 +295,25 @@
           1,
           null
         ]
+      },
+      "/Users/alexrandolph/turing/2module/ICs/polished-moon-6860/app/controllers/manufacturers_controller.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/alexrandolph/turing/2module/ICs/polished-moon-6860/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          null
+        ]
       }
     },
-    "timestamp": 1649090859
+    "timestamp": 1649091015
   }
 }
