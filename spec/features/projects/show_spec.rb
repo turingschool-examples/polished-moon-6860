@@ -25,7 +25,6 @@ RSpec.describe 'projects#show', type: :feature do
   end
 
   it 'shows average cost per item for project' do
-    expected = @project4.average_cost
-    expect(page).to have_content(expected)
+    expect(page).to have_content('Average Cost Per Item: 28.5')
   end
 end
