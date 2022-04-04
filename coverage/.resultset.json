@@ -242,12 +242,82 @@
         "lines": [
           1,
           null,
+          1,
+          null,
+          1,
           null
         ]
       },
       "/Users/ianross/turing/mod2/polished-moon-6860/app/helpers/application_helper.rb": {
         "lines": [
           1,
+          null
+        ]
+      },
+      "/Users/ianross/turing/mod2/polished-moon-6860/spec/features/manufacturer/index_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/ianross/turing/mod2/polished-moon-6860/spec/models/item_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          2,
+          2,
+          null,
+          null,
+          1,
+          2,
+          2,
+          2,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
           null
         ]
       },
@@ -258,6 +328,10 @@
           1,
           1,
           1,
+          null,
+          1,
+          1,
+          null,
           null
         ]
       },
@@ -338,8 +412,32 @@
           1,
           null
         ]
+      },
+      "/Users/ianross/turing/mod2/polished-moon-6860/app/controllers/items_controller.rb": {
+        "lines": [
+          1,
+          1,
+          2,
+          null,
+          null
+        ]
+      },
+      "/Users/ianross/turing/mod2/polished-moon-6860/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/Users/ianross/turing/mod2/polished-moon-6860/app/controllers/manufacturer_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
       }
     },
-    "timestamp": 1649033689
+    "timestamp": 1649038502
   }
 }
