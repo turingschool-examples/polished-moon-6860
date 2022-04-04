@@ -47,7 +47,7 @@ RSpec.describe 'Items show page' do
       expect(page).to have_content("Name: #{@putty.name}")
       expect(page).to have_content("Cost: #{@putty.cost}")
       expect(page).to have_content("Project: #{@fence.name}")
-      expect(page).to have_content("Number of Manufacturers: 3")
+      expect(page).to have_content("Number of Manufacturers: #{@putty.manufacturer_count}")
 
 
 
