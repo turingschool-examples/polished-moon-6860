@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe Manufacturer, type: :model do
+RSpec.describe 'Items show page' do
   before do
     Item.destroy_all
     Project.destroy_all
@@ -31,21 +31,25 @@ RSpec.describe Manufacturer, type: :model do
     @d_3 = ManufacturerItem.create!(item: @screw, manufacturer: @driver_co)
     @d_4 = ManufacturerItem.create!(item: @putty, manufacturer: @driver_co)
   end
+  describe 'As a visitor' do
 
-  describe 'validations' do
-    it { should validate_presence_of :name }
-    it { should validate_presence_of :location }
-  end
+    it 'I see the items name and cost, and name of project it belongs to' do
 
-  describe 'relationships' do
-    it { should have_many :manufacturer_items }
-    it { should have_many(:items).through(:manufacturer_items) }
-  end
+      visit "/items/#{@hammer.id}"
 
-  describe 'instance methods' do
+      expect(page).to have_content("Name: #{@hammer.name}")
+      expect(page).to have_content("Cost: #{@hammer.cost}")
+      expect(page).to have_content("Project: #{@fence.name}")
+    end
 
-    it 'returns all a manufacturers associated items' do
-      expect(@hammer_co.all_items).to eq([@hammer, @putty])
+    it 'I see a count of the number of manufacturers for this item' do
+
+      visit "/items/#{@putty.id}"
+
+      expect(page).to have_content("Name: #{@putty.name}")
+      expect(page).to have_content("Cost: #{@putty.cost}")
+      expect(page).to have_content("Project: #{@fence.name}")
+      expect(page).to have_content("Number of Manufacturers: #{@putty.manufacturer_count}")
     end
   end
 end

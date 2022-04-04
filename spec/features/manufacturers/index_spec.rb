@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe Manufacturer, type: :model do
+RSpec.describe 'manufacturers index page' do
   before do
     Item.destroy_all
     Project.destroy_all
@@ -31,21 +31,19 @@ RSpec.describe Manufacturer, type: :model do
     @d_3 = ManufacturerItem.create!(item: @screw, manufacturer: @driver_co)
     @d_4 = ManufacturerItem.create!(item: @putty, manufacturer: @driver_co)
   end
+  describe 'As a visitor' do
 
-  describe 'validations' do
-    it { should validate_presence_of :name }
-    it { should validate_presence_of :location }
-  end
+    it 'I see a list of names of all manufacturers, each as items they belong to' do
+      visit "/manufacturers"
 
-  describe 'relationships' do
-    it { should have_many :manufacturer_items }
-    it { should have_many(:items).through(:manufacturer_items) }
-  end
+      expect(page).to have_content("Company Name: #{@hammer_co.name}")
+      expect(page).to have_content("Company Name: #{@wrench_inc.name}")
+      expect(page).to have_content("Company Name: #{@driver_co.name}")
 
-  describe 'instance methods' do
-
-    it 'returns all a manufacturers associated items' do
-      expect(@hammer_co.all_items).to eq([@hammer, @putty])
+      within "#manu-#{@hammer_co.id}" do
+        expect(page).to have_content("Item Name: #{@hammer.name}")
+        expect(page).to have_content("Item Name: #{@putty.name}")
+      end
     end
   end
 end
