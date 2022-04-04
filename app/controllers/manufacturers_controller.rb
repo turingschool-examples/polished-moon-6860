@@ -1,11 +1,11 @@
-class ItemsController < ApplicationController
+class ManufacturersController < ApplicationController
   def index
     @manufacturers = Manufacturer.all
   end
 
   private
 
-  def item_params
+  def manufacturer_params
     params.permit(:id, :name, :location)
   end
 end
