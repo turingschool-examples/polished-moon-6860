@@ -23,9 +23,24 @@ RSpec.describe 'manufacturers#index', type: :feature do
   end
 
   it 'lists the names of all the manufacturers' do
-    save_and_open_page
     expect(page).to have_content(@manufacturer_6.name)
     expect(page).to have_content(@manufacturer_1.name)
     expect(page).to have_content(@manufacturer_3.name)
+  end
+
+  it 'lists the names of each of the items they belong to' do
+    within "#manufacturer-#{@manufacturer_3.id}" do
+      expect(page).to have_content(@item_16.name)
+      expect(page).not_to have_content(@item_7.name)
+      expect(page).not_to have_content(@item_3.name)
+      expect(page).not_to have_content(@item_6.name)
+    end
+
+    within "#manufacturer-#{@manufacturer_6.id}" do
+      expect(page).to have_content(@item_3.name)
+      expect(page).to have_content(@item_7.name)
+      expect(page).not_to have_content(@item_6.name)
+      expect(page).not_to have_content(@item_16.name)
+    end
   end
 end
