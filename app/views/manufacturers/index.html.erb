@@ -1,7 +1,12 @@
 <h1>Manufacturers Index Page</h1><br><br>
 
 <% @manufacturers.each do |manu| %>
+<div id="manu-<%= manu.id %>">
 
-  <%= manu.name %><br><br>
 
+  Company Name: <%= manu.name %><br>
+  <% manu.all_items.each do |item| %><br>
+    Item Name: <%= item.name %>
+  <% end %><br>
+<br></div>
 <% end %>

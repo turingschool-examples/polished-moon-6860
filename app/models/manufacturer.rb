@@ -5,6 +5,6 @@ class Manufacturer < ApplicationRecord
 
 
   def all_items
-    items
+    items #self.items
   end
 end

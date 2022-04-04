@@ -33,10 +33,10 @@ RSpec.describe 'manufacturers index page' do
       visit "/manufacturers"
 
       save_and_open_page
-      
-      expect(page).to have_content("Name: #{@hammer_co.name}")
-      expect(page).to have_content("Name: #{@wrench_inc.name}")
-      expect(page).to have_content("Name: #{@driver_co.name}")
+
+      expect(page).to have_content("Company Name: #{@hammer_co.name}")
+      expect(page).to have_content("Company Name: #{@wrench_inc.name}")
+      expect(page).to have_content("Company Name: #{@driver_co.name}")
 
       within "#manu-#{@hammer_co.id}" do
         expect(page).to have_content("Item Name: #{@hammer.name}")
