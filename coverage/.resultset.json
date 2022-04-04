@@ -251,6 +251,24 @@
           null
         ]
       },
+      "/Users/reuben/turing/2mod/practice/polished-moon-6860/spec/models/item_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          2,
+          2,
+          null,
+          null,
+          1,
+          2,
+          2,
+          2,
+          null,
+          null
+        ]
+      },
       "/Users/reuben/turing/2mod/practice/polished-moon-6860/app/models/item.rb": {
         "lines": [
           1,
@@ -340,6 +358,6 @@
         ]
       }
     },
-    "timestamp": 1649115810
+    "timestamp": 1649116338
   }
 }
