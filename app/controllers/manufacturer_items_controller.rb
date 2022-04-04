@@ -1,0 +1,3 @@
+class ManufacturerItemsController < ApplicationController
+  
+end
