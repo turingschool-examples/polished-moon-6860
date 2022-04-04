@@ -32,7 +32,7 @@ RSpec.describe 'manufacturers index page' do
     it 'I see a list of names of all manufacturers, each as items they belong to' do
       visit "/manufacturers"
 
-      save_and_open_page
+      # save_and_open_page
 
       expect(page).to have_content("Company Name: #{@hammer_co.name}")
       expect(page).to have_content("Company Name: #{@wrench_inc.name}")
