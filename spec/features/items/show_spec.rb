@@ -9,7 +9,7 @@ RSpec.describe 'item#show', type: :feature do
     item_7 = project_2.items.create!(name: 'Ball', cost: 12)
 
     visit "/items/#{item_3.id}"
-    save_and_open_page
+
     expect(page).to have_content(item_3.name)
     expect(page).to have_content(item_3.cost)
 

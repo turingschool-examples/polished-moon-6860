@@ -23,6 +23,7 @@ RSpec.describe 'manufacturers#index', type: :feature do
   end
 
   it 'lists the names of all the manufacturers' do
+    save_and_open_page
     expect(page).to have_content(@manufacturer_6.name)
     expect(page).to have_content(@manufacturer_1.name)
     expect(page).to have_content(@manufacturer_3.name)
