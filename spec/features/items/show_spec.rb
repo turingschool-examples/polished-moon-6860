@@ -10,25 +10,11 @@ RSpec.describe 'Items show page' do
       hammer = fence.items.create!(name: 'Big Ole Hammer', cost: 55)
 
       visit "/items/#{hammer.id}"
-      save_and_open_page
+      # save_and_open_page
       expect(page).to have_content("Name: #{hammer.name}")
       expect(page).to have_content("Cost: #{hammer.cost}")
       expect(page).to have_content("Project: #{fence.name}")
-
-
-
     end
-
-
-
-
-
   end
-
-
-
-
-
-
 
 end
