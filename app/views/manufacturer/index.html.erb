@@ -1,0 +1,8 @@
+<% @manufacturers.each_with_index do |manufacturer, index| %>
+  <div id="manufacturers-<%= index %>">
+    <h2><%= manufacturer.name %></h2>
+    <% manufacturer.items.each do |item| %>
+      <p><%= item.name %></p>
+    <% end %>
+  </div>
+<% end %>
