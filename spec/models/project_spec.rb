@@ -33,8 +33,8 @@ RSpec.describe Project, type: :model do
     end
 
     it '#average_cost' do
-      expect(@project_2.average_cost).to eq(38.5)
-      expect(@project_4.average_cost).to eq(39.5)
+      expect(@project_2.average_cost).to eq(32.5)
+      expect(@project_4.average_cost).to eq(28.5)
     end
   end
 end
