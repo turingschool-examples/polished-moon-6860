@@ -15,12 +15,11 @@ RSpec.describe Item, type: :model do
   describe 'instance methods' do
     before :each do
       @manufacturer1 = Manufacturer.create!(name: "Pabus shop", location: "Ferret land")
-      @manufacturer2 = Manufacturer.create!(name: "Pabus warehouse", location: "Ferret factory")
       @project = Project.create!(name: "Pabus Ferret Shop", manager: "Pabu")
-      @item1 = @project.items.create!(name: "Shampoo", cost: 20)
+      @item1 = @manufacturer1.items.create!(name: "Shampoo", cost: 20, project_id: @project.id)
     end
     it 'shows count of manufacturers' do
-      expect(@item1.manufacturer_count).to eq(2)
+      expect(@item1.manufacturer_count).to eq(1)
     end
   end
 end

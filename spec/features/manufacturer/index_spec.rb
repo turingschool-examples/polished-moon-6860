@@ -14,20 +14,13 @@ RSpec.describe 'manufacturers index' do
 
   describe 'manufacturers index page' do
     it 'shows items' do
-      within("#manufacturers-1") do
-        expect(page).to have_content(@manufacturers1.name)
-        expect(page).to have_content(@item1.name)
-        expect(page).to have_content(@item2.name)
-        expect(page).to have_no_content(@item3.name)
-        expect(page).to have_no_content(@item4.name)
-      end
-      within("#manufacturers-2") do
-        expect(page).to have_content(@manufacturers2.name)
-        expect(page).to have_content(@item3.name)
-        expect(page).to have_content(@item4.name)
-        expect(page).to have_no_content(@item1.name)
-        expect(page).to have_no_content(@item2.name)
-      end
+      expect(page).to have_content(@manufacturer1.name)
+      expect(page).to have_content(@item1.name)
+      expect(page).to have_content(@item2.name)
+
+      expect(page).to have_content(@manufacturer2.name)
+      expect(page).to have_content(@item3.name)
+      expect(page).to have_content(@item4.name)
     end
   end
 end
