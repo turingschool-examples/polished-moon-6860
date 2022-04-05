@@ -1,0 +1,11 @@
+<h3><%= @item.name %></h3>
+<p>For Project:<%= @project.name %></p>
+<p>Cost $<%=@item.cost%></p>
+<p>Manufacturers Available for <%=@item.name%>: <%= @item.manu_count%></p>
+<hr/>
+<h5>Add a New Manufacturer for this Item</h5>
+<%= form_with url: "/items/#{@item.id}", method: :post, local: true do |form| %>
+<%= form.label :new_manufacturer, "Manufacturer Id" %>
+<%= form.text_field :new_manufacturer %>
+<%= form.submit "Add Manufacturer to Item" %>
+<% end %>
