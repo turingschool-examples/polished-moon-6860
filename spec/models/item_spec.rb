@@ -20,7 +20,7 @@ RSpec.describe Item, type: :model do
       world_of_erasers = Manufacturer.create!(name: "World of Erasers", location: "Africa")
       ManufacturerItem.create!(manufacturer_id: pencil_works.id, item_id: item.id)
       ManufacturerItem.create!(manufacturer_id: world_of_erasers.id, item_id: item.id)
-      expect(item.manufacturer_count).to eq("2")
+      expect(item.manufacturer_count).to eq(2)
     end
   end
 end
