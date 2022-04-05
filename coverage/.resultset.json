@@ -254,27 +254,53 @@
           null
         ]
       },
-      "/Users/josephdowns/turing/2module/challenges/polished-moon-6860/app/models/project.rb": {
+      "/Users/josephdowns/turing/2module/challenges/polished-moon-6860/spec/features/manufacturers/index_spec.rb": {
         "lines": [
           1,
+          null,
           1,
           1,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
           null
         ]
       },
-      "/Users/josephdowns/turing/2module/challenges/polished-moon-6860/app/models/application_record.rb": {
+      "/Users/josephdowns/turing/2module/challenges/polished-moon-6860/spec/models/item_spec.rb": {
         "lines": [
           1,
-          1,
-          null
-        ]
-      },
-      "/Users/josephdowns/turing/2module/challenges/polished-moon-6860/app/models/manufacturer.rb": {
-        "lines": [
+          null,
           1,
           1,
+          2,
+          2,
+          null,
+          null,
           1,
-          1,
+          2,
+          2,
+          2,
+          null,
           null
         ]
       },
@@ -288,10 +314,97 @@
           null
         ]
       },
+      "/Users/josephdowns/turing/2module/challenges/polished-moon-6860/app/models/application_record.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/josephdowns/turing/2module/challenges/polished-moon-6860/spec/models/manufacturer_item_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          2,
+          2,
+          null,
+          null
+        ]
+      },
       "/Users/josephdowns/turing/2module/challenges/polished-moon-6860/app/models/manufacturer_item.rb": {
         "lines": [
           1,
           1,
+          1,
+          null
+        ]
+      },
+      "/Users/josephdowns/turing/2module/challenges/polished-moon-6860/spec/models/manufacturer_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          2,
+          2,
+          null,
+          null,
+          1,
+          2,
+          2,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/josephdowns/turing/2module/challenges/polished-moon-6860/app/models/manufacturer.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/josephdowns/turing/2module/challenges/polished-moon-6860/spec/models/project_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          2,
+          2,
+          null,
+          null,
+          1,
+          2,
+          null,
+          null
+        ]
+      },
+      "/Users/josephdowns/turing/2module/challenges/polished-moon-6860/app/models/project.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/josephdowns/turing/2module/challenges/polished-moon-6860/app/controllers/items_controller.rb": {
+        "lines": [
+          1,
+          1,
+          2,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/josephdowns/turing/2module/challenges/polished-moon-6860/app/controllers/application_controller.rb": {
+        "lines": [
           1,
           null
         ]
@@ -305,14 +418,8 @@
           null,
           null
         ]
-      },
-      "/Users/josephdowns/turing/2module/challenges/polished-moon-6860/app/controllers/application_controller.rb": {
-        "lines": [
-          1,
-          null
-        ]
       }
     },
-    "timestamp": 1649120064
+    "timestamp": 1649120652
   }
 }
