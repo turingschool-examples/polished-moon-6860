@@ -242,6 +242,7 @@
         "lines": [
           1,
           null,
+          1,
           null
         ]
       },
@@ -356,8 +357,23 @@
           1,
           null
         ]
+      },
+      "/Users/willmedders/turing/2mod/ic/polished-moon-6860/app/controllers/items_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/willmedders/turing/2mod/ic/polished-moon-6860/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          null
+        ]
       }
     },
-    "timestamp": 1649183070
+    "timestamp": 1649183682
   }
 }
