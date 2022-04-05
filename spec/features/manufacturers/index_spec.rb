@@ -21,9 +21,10 @@ RSpec.describe 'Manufacturers index page' do
     expect(page).to have_content(manufacturer2.name)
     expect(page).to have_content(manufacturer3.name)
     
-    within("#{manufacturer1.name}") do 
-      expect(page).to have_content("thingamabob")
-    end 
+    expect(page).to have_content("thingamabob")
+    # within("#{manufacturer1.name}") do 
+      # expect(page).to have_content("thingamabob")
+    # end 
     
   end
 end
