@@ -4,4 +4,7 @@ class Item < ApplicationRecord
   has_many (:manufacturer_items)
   has_many (:manufacturers), through: (:manufacturer_items)
 
+  def total_number_manufacturers
+    manufacturers.count
+  end
 end

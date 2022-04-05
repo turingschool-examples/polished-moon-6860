@@ -263,27 +263,27 @@
           null,
           1,
           1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
           null,
           null,
           1,
           null,
-          1,
+          0,
           null,
-          1,
-          1,
-          1,
-          1,
-          1,
+          0,
+          0,
+          0,
+          0,
+          0,
           null,
           null,
           null
@@ -295,14 +295,14 @@
           null,
           1,
           1,
-          2,
-          2,
+          1,
+          1,
           null,
           null,
           1,
-          2,
-          2,
-          2,
+          1,
+          1,
+          1,
           null,
           null
         ]
@@ -314,6 +314,9 @@
           1,
           1,
           1,
+          null,
+          1,
+          0,
           null,
           null
         ]
@@ -348,13 +351,13 @@
           null,
           1,
           1,
-          2,
-          2,
+          1,
+          1,
           null,
           null,
           1,
-          2,
-          2,
+          1,
+          1,
           null,
           null,
           null
@@ -375,12 +378,12 @@
           null,
           1,
           1,
-          2,
-          2,
+          1,
+          1,
           null,
           null,
           1,
-          2,
+          1,
           null,
           null
         ]
@@ -398,7 +401,8 @@
           1,
           null,
           1,
-          1,
+          2,
+          2,
           null,
           null
         ]
@@ -408,18 +412,8 @@
           1,
           null
         ]
-      },
-      "/Users/kjolhede/turing/2module/polished-moon-6860/app/controllers/manufacturers_controller.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          null,
-          null
-        ]
       }
     },
-    "timestamp": 1649172550
+    "timestamp": 1649174039
   }
 }
