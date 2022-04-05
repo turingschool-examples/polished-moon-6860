@@ -1,0 +1,9 @@
+<h2>Manufacturers</h2>
+<% @manufacturers.each do |man| %>
+<div class="man-<%=man.id%>">
+  <h4><%= man.name %></h4>
+  <% man.items.each do |item| %>
+  <p><%=item.name %></p>
+  <% end %>
+</div>
+<% end %>
