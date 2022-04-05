@@ -1,0 +1,6 @@
+<h3>Info for <%=@project.name %></h3>
+<% @project.items.each do |item| %>
+<p><%= item.name %></p>
+<p><%= item.cost %></p>
+<p>Average item cost:<%= @project.average_cost_of_items_by_name %></p>
+<% end %>
