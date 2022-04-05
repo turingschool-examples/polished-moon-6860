@@ -244,6 +244,7 @@
           null,
           null,
           1,
+          1,
           null,
           null,
           null,
@@ -253,6 +254,38 @@
       "/Users/kjolhede/turing/2module/polished-moon-6860/app/helpers/application_helper.rb": {
         "lines": [
           1,
+          null
+        ]
+      },
+      "/Users/kjolhede/turing/2module/polished-moon-6860/spec/features/manufacturers/index_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
           null
         ]
       },
@@ -375,8 +408,18 @@
           1,
           null
         ]
+      },
+      "/Users/kjolhede/turing/2module/polished-moon-6860/app/controllers/manufacturers_controller.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          null,
+          null
+        ]
       }
     },
-    "timestamp": 1649167881
+    "timestamp": 1649172550
   }
 }
