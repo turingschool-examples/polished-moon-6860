@@ -7,14 +7,14 @@ RSpec.describe 'the Item show page' do
   end
 
   it 'shows an items name and cost' do
-    visit '/items/:id'
+    visit "/items/#{@item.id}"
 
     expect(page).to have_content(@item.name)
     expect(page).to have_content(@item.cost)
   end
 
   it 'shows what project the item belongs to' do
-    visit '/items/:id'
+    visit "/items/#{@item.id}"
 
     expect(page).to have_content(@project.name)
   end
