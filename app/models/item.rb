@@ -5,7 +5,6 @@ class Item < ApplicationRecord
   has_many :manufacturers, through: :manufacturer_items
   
   def num_manufacturers
-    require "pry"; binding.pry
-    Item.manufacturers.count
+    manufacturers.count
   end
 end
