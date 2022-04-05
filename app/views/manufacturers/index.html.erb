@@ -1,0 +1,7 @@
+<% @manufacturers.each do |manufacturer| %>
+<div id="<% manufacturer.id %>">
+<h3><%= manufacturer.name %></h3>
+  <% manufacturer.items.each do |item| %>
+  <p>Makes: <%= item.name %></p>
+  <% end %></div>
+<% end %>
