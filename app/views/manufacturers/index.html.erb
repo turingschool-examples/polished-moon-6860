@@ -2,7 +2,7 @@
 
 <% @all_manu.each do |manu| %>
   <h3>Manufacturer: <%= manu.name %></h3>
-  <% manu.find_items.each do |item| %>
+  <% manu.items.each do |item| %>
     <p><%= item.name %></p>
     <% end %>
 <% end %>
