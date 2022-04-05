@@ -253,6 +253,44 @@
           null
         ]
       },
+      "/Users/lukepascale/turing/2module/independent/polished-moon-6860/spec/features/manufacturers/index_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          2,
+          null,
+          2,
+          2,
+          2,
+          2,
+          null,
+          2,
+          2,
+          2,
+          2,
+          2,
+          null,
+          2,
+          null,
+          null,
+          1,
+          null,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
+          1,
+          0,
+          0,
+          null,
+          null,
+          null
+        ]
+      },
       "/Users/lukepascale/turing/2module/independent/polished-moon-6860/spec/models/item_spec.rb": {
         "lines": [
           1,
@@ -376,6 +414,6 @@
         ]
       }
     },
-    "timestamp": 1649195373
+    "timestamp": 1649196585
   }
 }
