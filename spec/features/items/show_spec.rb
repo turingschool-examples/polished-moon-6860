@@ -12,6 +12,7 @@ RSpec.describe "item show" do
     ManufacturerItem.create!(manufacturer: @manufacturer1, item: @item1)
     ManufacturerItem.create!(manufacturer: @manufacturer2, item: @item3)
     ManufacturerItem.create!(manufacturer: @manufacturer1, item: @item2)
+    ManufacturerItem.create!(manufacturer: @manufacturer2, item: @item1)
   end
 
   it 'can show item, cost and project on Item show page' do
