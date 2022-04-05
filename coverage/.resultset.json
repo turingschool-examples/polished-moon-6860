@@ -243,6 +243,8 @@
           1,
           1,
           null,
+          1,
+          null,
           null
         ]
       },
@@ -267,6 +269,15 @@
           null
         ]
       },
+      "/Users/josephdowns/turing/2module/challenges/polished-moon-6860/app/models/manufacturer.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null
+        ]
+      },
       "/Users/josephdowns/turing/2module/challenges/polished-moon-6860/app/models/item.rb": {
         "lines": [
           1,
@@ -277,12 +288,19 @@
           null
         ]
       },
-      "/Users/josephdowns/turing/2module/challenges/polished-moon-6860/app/controllers/items_controller.rb": {
+      "/Users/josephdowns/turing/2module/challenges/polished-moon-6860/app/models/manufacturer_item.rb": {
         "lines": [
           1,
           1,
           1,
+          null
+        ]
+      },
+      "/Users/josephdowns/turing/2module/challenges/polished-moon-6860/app/controllers/manufacturers_controller.rb": {
+        "lines": [
           1,
+          1,
+          2,
           null,
           null,
           null
@@ -295,6 +313,6 @@
         ]
       }
     },
-    "timestamp": 1649117764
+    "timestamp": 1649120064
   }
 }
