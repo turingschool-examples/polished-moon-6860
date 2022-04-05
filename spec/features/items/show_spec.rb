@@ -30,7 +30,8 @@ RSpec.describe 'the Item show page' do
   end
 
   it 'shows a count of the number of manufacturers for an item' do
-
+    visit "/items/#{@item_1.id}"
+    
     expect(page).to have_content("Total Manufacturers: 4")
   end
 end
