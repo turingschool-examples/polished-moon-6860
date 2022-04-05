@@ -252,6 +252,34 @@
           null
         ]
       },
+      "/Users/aliciawatt/turing/2module/independent_challenges/polished-moon-6860/spec/features/manufacturers/index_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          0,
+          0,
+          0,
+          null,
+          null
+        ]
+      },
       "/Users/aliciawatt/turing/2module/independent_challenges/polished-moon-6860/spec/models/item_spec.rb": {
         "lines": [
           1,
@@ -359,6 +387,6 @@
         ]
       }
     },
-    "timestamp": 1649163778
+    "timestamp": 1649164836
   }
 }
