@@ -1,8 +1,8 @@
 require 'rails_helper'
 
-RSpec.describe 'the shelters index' do
+RSpec.describe 'the manufacturers index' do
 
-  it 'lists all the shelter names' do
+  it 'lists all the manufacturers and their items' do
     project = Project.create!(name: "Lazer Makers", manager: "Mike Dao")
     manufacturer1 = Manufacturer.create!(name: 'Wizards of the Coast', location: 'Seattle')
     manufacturer2 = Manufacturer.create!(name: 'Ben and Jerrys', location: 'Baulders Gate')
@@ -15,7 +15,7 @@ RSpec.describe 'the shelters index' do
     manufacturer_item3 = ManufacturerItem.create!(manufacturer_id: manufacturer2.id, item_id: item3.id )
     manufacturer_item4 = ManufacturerItem.create!(manufacturer_id: manufacturer2.id, item_id: item4.id )
     visit "/manufacturers/"
-    save_and_open_page
+
     expect(page).to have_content(manufacturer1.name)
     expect(page).to have_content(manufacturer2.name)
     expect(page).to have_content(item1.name)
