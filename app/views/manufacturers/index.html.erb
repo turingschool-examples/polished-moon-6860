@@ -1,0 +1,8 @@
+<h1>Manufacturers index</h1>
+
+<% @all_manu.each do |manu| %>
+  <h3>Manufacturer: <%= manu.name %></h3>
+  <% manu.find_items.each do |item| %>
+    <p><%= item.name %></p>
+    <% end %>
+<% end %>

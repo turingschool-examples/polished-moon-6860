@@ -244,12 +244,55 @@
           null,
           1,
           null,
+          1,
+          null,
           null
         ]
       },
       "/Users/pistachiojoe/turing/mod2/2proj/2ic/polished-moon-6860/app/helpers/application_helper.rb": {
         "lines": [
           1,
+          null
+        ]
+      },
+      "/Users/pistachiojoe/turing/mod2/2proj/2ic/polished-moon-6860/spec/features/manufacturers/index_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
           null
         ]
       },
@@ -332,6 +375,10 @@
           1,
           1,
           1,
+          null,
+          1,
+          2,
+          null,
           null
         ]
       },
@@ -356,10 +403,6 @@
           1,
           1,
           1,
-          null,
-          null,
-          null,
-          null,
           null
         ]
       },
@@ -381,8 +424,22 @@
           1,
           null
         ]
+      },
+      "/Users/pistachiojoe/turing/mod2/2proj/2ic/polished-moon-6860/app/controllers/manufacturers_controller.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
       }
     },
-    "timestamp": 1649132717
+    "timestamp": 1649182336
   }
 }
