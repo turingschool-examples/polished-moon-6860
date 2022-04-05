@@ -297,12 +297,20 @@
           null
         ]
       },
-      "/Users/alexanderpsitos/turing/2module/week4/polished-moon-6860/app/controllers/manufacturers_controller.rb": {
+      "/Users/alexanderpsitos/turing/2module/week4/polished-moon-6860/app/controllers/items_controller.rb": {
         "lines": [
           1,
           null,
           1,
+          null,
+          null,
+          null,
           1,
+          0,
+          null,
+          null,
+          1,
+          2,
           null,
           null
         ]
@@ -314,6 +322,6 @@
         ]
       }
     },
-    "timestamp": 1649199599
+    "timestamp": 1649199998
   }
 }

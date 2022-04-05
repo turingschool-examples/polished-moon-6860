@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2022-04-05T18:59:59-04:00">2022-04-05T18:59:59-04:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2022-04-05T19:06:38-04:00">2022-04-05T19:06:38-04:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -23,14 +23,14 @@
     <span class="group_name">All Files</span>
     (<span class="covered_percent">
       <span class="green">
-  100.0%
+  98.53%
 </span>
 
      </span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.02
+         1.01
        </span>
     </span> hits/line
     )
@@ -43,11 +43,11 @@
   </div>
 
   <div class="t-line-summary">
-    <b>65</b> relevant lines,
-    <span class="green"><b>65</b> lines covered</span> and
-    <span class="red"><b>0</b> lines missed. </span>
+    <b>68</b> relevant lines,
+    <span class="green"><b>67</b> lines covered</span> and
+    <span class="red"><b>1</b> lines missed. </span>
     (<span class="green">
-  100.0%
+  98.53%
 </span>
 )
   </div>
@@ -82,12 +82,12 @@
           </tr>
         
           <tr class="t-file">
-            <td class="strong t-file__name"><a href="#c1451e9a7996c73cda2f6d50e0d94bdb2cb58546" class="src_link" title="app/controllers/manufacturers_controller.rb">app/controllers/manufacturers_controller.rb</a></td>
-            <td class="green strong cell--number t-file__coverage">100.00 %</td>
+            <td class="strong t-file__name"><a href="#0a079b5a9c6799c86745a10ecdc7b0b0c45151b0" class="src_link" title="app/controllers/items_controller.rb">app/controllers/items_controller.rb</a></td>
+            <td class="yellow strong cell--number t-file__coverage">83.33 %</td>
+            <td class="cell--number">14</td>
             <td class="cell--number">6</td>
-            <td class="cell--number">3</td>
-            <td class="cell--number">3</td>
-            <td class="cell--number">0</td>
+            <td class="cell--number">5</td>
+            <td class="cell--number">1</td>
             <td class="cell--number">1.00</td>
             
           </tr>
@@ -382,12 +382,12 @@
 </div>
 
       
-        <div class="source_table" id="c1451e9a7996c73cda2f6d50e0d94bdb2cb58546">
+        <div class="source_table" id="0a079b5a9c6799c86745a10ecdc7b0b0c45151b0">
   <div class="header">
-    <h3>app/controllers/manufacturers_controller.rb</h3>
+    <h3>app/controllers/items_controller.rb</h3>
     <h4>
-      <span class="green">
-  100.0%
+      <span class="yellow">
+  83.33%
 </span>
 
       lines covered
@@ -396,9 +396,9 @@
     
 
     <div class="t-line-summary">
-      <b>3</b> relevant lines.
-      <span class="green"><b>3</b> lines covered</span> and
-      <span class="red"><b>0</b> lines missed.</span>
+      <b>6</b> relevant lines.
+      <span class="green"><b>5</b> lines covered</span> and
+      <span class="red"><b>1</b> lines missed.</span>
     </div>
 
     
@@ -415,7 +415,7 @@
 
             
 
-            <code class="ruby">class ManufacturersController &lt; ApplicationController</code>
+            <code class="ruby">class ItemsController &lt; ApplicationController</code>
           </li>
         </div>
       
@@ -437,18 +437,18 @@
 
             
 
-            <code class="ruby">  def index</code>
+            <code class="ruby">  def new</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="4">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="4">
+            
             
 
             
 
-            <code class="ruby">    @manufacturers = Manufacturer.all</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
@@ -470,7 +470,95 @@
 
             
 
-            <code class="ruby">end </code>
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="7">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def create</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="8">
+            
+            
+
+            
+
+            <code class="ruby">    @item = Item.create!(item_params)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="9">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="10">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="11">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def show</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="12">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">    @item = Item.find(params[:id])</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="13">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="14">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
           </li>
         </div>
       
