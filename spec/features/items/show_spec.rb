@@ -9,5 +9,8 @@ RSpec.describe 'Item show page' do
     item = project.items.create!(name: 'thingamabob', cost: 12)
     visit "/items/#{item.id}"
     
+    expect(page).to have_content("#{item.name}")
+    expect(page).to have_content("#{item.cost}")
+    
   end
 end
