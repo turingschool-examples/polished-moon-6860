@@ -1,0 +1,8 @@
+<h1>All Manufacturers</h1>
+
+<% @manufacturers.each do |manufacturer| %>
+  <h2><%= manufacturer.name %></h2>
+  <% manufacturer.items.each do |item| %>
+    <p>We make: <%= item.name %></p>
+  <% end %>
+<% end %>

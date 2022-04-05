@@ -243,6 +243,8 @@
           1,
           null,
           1,
+          null,
+          1,
           null
         ]
       },
@@ -277,7 +279,24 @@
           null
         ]
       },
-      "/Users/scottsullivan/turing/2module/ic/polished-moon-6860/app/controllers/items_controller.rb": {
+      "/Users/scottsullivan/turing/2module/ic/polished-moon-6860/app/models/manufacturer_item.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/scottsullivan/turing/2module/ic/polished-moon-6860/app/models/manufacturer.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/scottsullivan/turing/2module/ic/polished-moon-6860/app/controllers/manufacturers_controller.rb": {
         "lines": [
           1,
           1,
@@ -293,6 +312,6 @@
         ]
       }
     },
-    "timestamp": 1649192291
+    "timestamp": 1649199662
   }
 }
