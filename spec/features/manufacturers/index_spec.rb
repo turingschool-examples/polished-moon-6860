@@ -27,5 +27,6 @@ RSpec.describe 'manufacturers index page' do
     visit "/manufacturers"
     expect(page).to have_content(item.name)
     expect(page).to have_content(item_2.name)
+    # expect(item.name).to appear_before(world_of_erasers.name)
   end
 end

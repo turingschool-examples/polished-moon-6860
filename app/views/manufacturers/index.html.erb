@@ -1,3 +1,6 @@
 <% @manufacturers.each do |manufacturer| %>
 <h3><%= manufacturer.name %></h3>
+  <% manufacturer.items.each do |item| %>
+  <p>Makes: <%= item.name %></p>
+  <% end %>
 <% end %>
