@@ -9,7 +9,6 @@ RSpec.describe "manufacturers index" do
     @remodel = Manufacturer.create!(name: "Remodel", location: "Golden, CO")
     @diy = Manufacturer.create!(name: "DIY Tools", location: "Arvada, CO")
 
-    @sander.manufacturers << @remodel
     @varnish.manufacturers << @remodel
     @varnish.manufacturers << @diy
   end
@@ -18,7 +17,8 @@ RSpec.describe "manufacturers index" do
     visit "/manufacturers"
 
     expect(page).to have_content(@remodel.name)
+    expect(page).to have_content(@diy.name)
     expect(page).to have_content(@varnish.name)
-    expect(page).to have_content(@diy.varnish)
+    expect(page).to_not have_content(@sander.name)
   end
 end

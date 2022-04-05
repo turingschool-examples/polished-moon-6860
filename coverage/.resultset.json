@@ -243,6 +243,8 @@
           1,
           null,
           1,
+          null,
+          1,
           null
         ]
       },
@@ -267,15 +269,15 @@
           null,
           1,
           1,
-          1,
           null,
           null,
           1,
           1,
           null,
-          0,
-          0,
-          0,
+          1,
+          1,
+          1,
+          1,
           null,
           null
         ]
@@ -385,8 +387,23 @@
           1,
           null
         ]
+      },
+      "/Users/aliciawatt/turing/2module/independent_challenges/polished-moon-6860/app/controllers/manufacturers_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/aliciawatt/turing/2module/independent_challenges/polished-moon-6860/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          null
+        ]
       }
     },
-    "timestamp": 1649164836
+    "timestamp": 1649165549
   }
 }
