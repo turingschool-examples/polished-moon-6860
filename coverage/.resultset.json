@@ -242,12 +242,31 @@
         "lines": [
           1,
           null,
+          1,
           null
         ]
       },
       "/Users/vaeliwen/turing/2module/polished-moon-6860/app/helpers/application_helper.rb": {
         "lines": [
           1,
+          null
+        ]
+      },
+      "/Users/vaeliwen/turing/2module/polished-moon-6860/spec/models/item_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          2,
+          2,
+          null,
+          null,
+          1,
+          2,
+          2,
+          2,
+          null,
           null
         ]
       },
@@ -338,8 +357,25 @@
           1,
           null
         ]
+      },
+      "/Users/vaeliwen/turing/2module/polished-moon-6860/app/controllers/items_controller.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/vaeliwen/turing/2module/polished-moon-6860/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          null
+        ]
       }
     },
-    "timestamp": 1649189226
+    "timestamp": 1649190120
   }
 }
