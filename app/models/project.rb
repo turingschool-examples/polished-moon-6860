@@ -4,6 +4,5 @@ class Project < ApplicationRecord
 
   def avg_item_price
     items.average(:cost)
-    # require "pry"; binding.pry
   end
 end

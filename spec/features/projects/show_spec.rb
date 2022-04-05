@@ -18,11 +18,13 @@ RSpec.describe 'project show page' do
     visit "/projects/#{@project1.id}"
     expect(page).to have_content(@project1.name)
     expect(page).to have_content(213.33)
+    expect(page).not_to have_content(213.3333)
     expect(page).not_to have_content(@item2.name)
 
     visit "/projects/#{@project2.id}"
     expect(page).to have_content(@project2.name)
     expect(page).to have_content(426.67)
+    expect(page).not_to have_content(426.66667)
     expect(page).not_to have_content(@item6.name)
   end
 end
