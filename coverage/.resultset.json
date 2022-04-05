@@ -242,12 +242,35 @@
         "lines": [
           1,
           null,
+          null,
+          1,
+          null,
+          null,
+          null,
           null
         ]
       },
       "/Users/kjolhede/turing/2module/polished-moon-6860/app/helpers/application_helper.rb": {
         "lines": [
           1,
+          null
+        ]
+      },
+      "/Users/kjolhede/turing/2module/polished-moon-6860/spec/models/item_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          2,
+          2,
+          null,
+          null,
+          1,
+          2,
+          2,
+          2,
+          null,
           null
         ]
       },
@@ -313,23 +336,6 @@
           null
         ]
       },
-      "/Users/kjolhede/turing/2module/polished-moon-6860/spec/models/manufactureritem_spec.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          null
-        ]
-      },
-      "/Users/kjolhede/turing/2module/polished-moon-6860/app/models/manufactureritem.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          null
-        ]
-      },
       "/Users/kjolhede/turing/2module/polished-moon-6860/spec/models/project_spec.rb": {
         "lines": [
           1,
@@ -353,8 +359,24 @@
           1,
           null
         ]
+      },
+      "/Users/kjolhede/turing/2module/polished-moon-6860/app/controllers/items_controller.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/kjolhede/turing/2module/polished-moon-6860/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          null
+        ]
       }
     },
-    "timestamp": 1649164920
+    "timestamp": 1649167881
   }
 }
