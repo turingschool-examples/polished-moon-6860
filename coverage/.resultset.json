@@ -244,6 +244,9 @@
           null,
           1,
           1,
+          null,
+          1,
+          null,
           1,
           null
         ]
@@ -321,7 +324,6 @@
           null,
           null,
           1,
-          null,
           1,
           1,
           1,
@@ -378,7 +380,6 @@
           1,
           null,
           null,
-          null,
           null
         ]
       },
@@ -391,7 +392,7 @@
           1,
           null,
           1,
-          8,
+          9,
           null,
           null,
           null
@@ -438,7 +439,6 @@
           2,
           2,
           null,
-          null,
           null
         ]
       },
@@ -483,7 +483,6 @@
           1,
           null,
           null,
-          null,
           null
         ]
       },
@@ -496,7 +495,6 @@
           1,
           4,
           null,
-          null,
           null
         ]
       },
@@ -505,8 +503,8 @@
           1,
           null,
           1,
-          5,
-          5,
+          6,
+          6,
           null,
           null,
           null
@@ -518,12 +516,25 @@
           null
         ]
       },
-      "/Users/susanboyd/turing/2module/3week/polished-moon-6860/app/controllers/manufacturers_controller.rb": {
+      "/Users/susanboyd/turing/2module/3week/polished-moon-6860/app/controllers/manufacturer_items_controller.rb": {
         "lines": [
           1,
           null,
           1,
           1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/susanboyd/turing/2module/3week/polished-moon-6860/app/controllers/manufacturers_controller.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          2,
           null,
           null
         ]
@@ -539,6 +550,6 @@
         ]
       }
     },
-    "timestamp": 1649166323
+    "timestamp": 1649167403
   }
 }

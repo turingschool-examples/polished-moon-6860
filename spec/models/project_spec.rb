@@ -28,5 +28,4 @@ RSpec.describe Project, type: :model do
       expect(@project2.avg_item_price.to_f.round(2)).to eq(426.67)
     end
   end
-
 end

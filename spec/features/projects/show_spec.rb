@@ -14,7 +14,6 @@ RSpec.describe 'project show page' do
   end
 
   it 'shows the average cost per item needed for the project' do
-    # require "pry"; binding.pry
     visit "/projects/#{@project1.id}"
     expect(page).to have_content(@project1.name)
     expect(page).to have_content(213.33)

@@ -37,5 +37,4 @@ RSpec.describe Item, type: :model do
       expect(@item3.manu_count).to eq(2)
     end
   end
-
 end

@@ -41,14 +41,17 @@ RSpec.describe 'items show page' do
   it 'can add a manufacturer to a project' do
     visit "/items/#{@item1.id}"
     expect(page).to have_content("Manufacturers Available for Chair: 2")
+
     fill_in(:new_manufacturer, with: @manufacturer2.id)
     click_on("Add Manufacturer to Item")
+
     expect(current_path).to eq("/items/#{@item1.id}")
     expect(page).to have_content("Manufacturers Available for Chair: 3")
-
+    
     visit "/manufacturers"
     within ".man-#{@manufacturer2.id}" do
       expect(page).to have_content(@item1.name)
+      expect(page).not_to have_content(@item2.name)
     end
   end
 end
