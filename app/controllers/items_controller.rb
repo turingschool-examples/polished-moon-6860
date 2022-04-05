@@ -3,10 +3,10 @@ class ItemsController < ApplicationController
     @item = Item.find(params[:id])
     @project = Project.find(@item.project_id)
   end
-
-  private
-
-  def item_params
-    params.permit(:name, :cost)
-  end
+  #
+  # private
+  #
+  # def item_params
+  #   params.permit(:name, :cost)
+  # end
 end
