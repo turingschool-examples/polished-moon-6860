@@ -11,13 +11,19 @@ RSpec.describe 'Manufacturers index page' do
     manufacturer3 = Manufacturer.create!(name: 'Tickle Me', location: "New Foundland")
     
     project = Project.create!(name: 'newbuild', manager: 'Rick')
-    item1 = project.items.create!(name: 'thingamabob', cost: 12)
-    item2 = project.items.create!(name: 'rattle', cost: 76)
-    item3 = project.items.create!(name: 'doohickey', cost: 34)
-
+    item1 = manufacturer1.items.create!(name: 'thingamabob', cost: 12, project_id:"#{project.id}")
+    item2 = manufacturer1.items.create!(name: 'rattle', cost: 76, project_id:"#{project.id}")
+    item3 = manufacturer2.items.create!(name: 'doohickey', cost: 34, project_id:"#{project.id}")
     visit "/manufacturers"
+    save_and_open_page
     
-    expect(page).to have_content(manufacturer1.name, manufacturer2.name, manufacturer3.name)
-    expect("thingamabob").to appear_before('doohickey')
+    expect(page).to have_content(manufacturer1.name)
+    expect(page).to have_content(manufacturer2.name)
+    expect(page).to have_content(manufacturer3.name)
+    
+    within("#{manufacturer1.name}") do 
+      expect(page).to have_content("thingamabob")
+    end 
+    
   end
 end

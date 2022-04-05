@@ -1,0 +1,11 @@
+<h1>Manufacturers Index</h1>
+<% @manufacturers.each do |manufacturer| %>
+  <div class="<%=manufacturer.name%>">
+    
+      <h2><%= manufacturer.name %></h2>
+      <p><% manufacturer.items.each do |item|  %></p>
+      <p><%= item.name %></p>
+      <% end %>
+      <hr>
+  </div>
+<% end  %>
