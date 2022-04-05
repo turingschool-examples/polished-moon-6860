@@ -8,7 +8,7 @@ RSpec.describe Manufacturer, type: :model do
 
   describe 'relationships' do
     it { should have_many :manufacturer_items }
-    it { should have_many(:items).through(:manufacturer_items) }
+    it { should have_many(:items).through (:manufacturer_items)}
   end
-    
+
 end
