@@ -21,4 +21,16 @@ RSpec.describe 'item show page' do
     visit "/items/#{item.id}"
     expect(page).to have_content(project.name)
   end
+
+  it 'displays a count of manufacturers for item' do
+    project = Project.create!(name: "Pencil Project", manager: "Billy")
+    item = project.items.create!(name: "Pencil", cost: "50")
+    pencil_works = Manufacturer.create!(name: "Pencil Works", location: "China")
+    world_of_erasers = Manufacturer.create!(name: "World of Erasers", location: "Africa")
+    ManufacturerItem.create!(manufacturer_id: pencil_works.id, item_id: item.id)
+    ManufacturerItem.create!(manufacturer_id: world_of_erasers.id, item_id: item.id)
+
+    visit "/items/#{item.id}"
+    expect(page).to have_content("Number of Manufacturers: 2")
+  end
 end
