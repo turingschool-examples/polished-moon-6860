@@ -7,5 +7,6 @@ RSpec.describe 'the item show page' do
     visit "/items/#{item_1.id}"
     expect(page).to have_content("#{item_1.name}")
     expect(page).to have_content("#{item_1.cost}")
+    expect(page).to have_content("#{project_1.name}")
   end
 end
