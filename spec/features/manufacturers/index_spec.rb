@@ -15,7 +15,6 @@ RSpec.describe 'Manufacturers index page' do
     item2 = manufacturer1.items.create!(name: 'rattle', cost: 76, project_id:"#{project.id}")
     item3 = manufacturer2.items.create!(name: 'doohickey', cost: 34, project_id:"#{project.id}")
     visit "/manufacturers"
-    save_and_open_page
     
     expect(page).to have_content(manufacturer1.name)
     expect(page).to have_content(manufacturer2.name)
