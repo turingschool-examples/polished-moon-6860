@@ -1,7 +1,7 @@
 class ItemsController < ApplicationController
   def show
-    @items = Item.find(params[:id])
-    @project = Project.find(@items.project_id)
+    @item = Item.find(params[:id])
+    @project = Project.find(@item.project_id)
   end
 
   private
