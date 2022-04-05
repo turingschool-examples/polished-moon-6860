@@ -46,8 +46,8 @@ RSpec.describe 'item show page' do
     expect(current_path).to eq("/items/#{item.id}")
     expect(page).to have_content("Number of Manufacturers: 2")
     visit '/manufacturers'
-    within '#pencil_works' do
+    # within "##{pencil_works.id}" do
       expect(page).to have_content("Pencil")
-    end
+    # end
   end
 end

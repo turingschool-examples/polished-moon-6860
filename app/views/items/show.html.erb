@@ -2,3 +2,8 @@
 <p>Cost: <%= @item.cost %></p>
 <p>Project: <%= @item.project.name %>
  <p>Number of Manufacturers: <%= @item.manufacturer_count %> </p>
+ <%= form_with url: "/items/#{@item.id}", method: :patch, local: true do |form| %>
+ <%= form.label "Manufacturer ID" %>
+ <%= form.text_field "Manufacturer ID" %>
+ <%= form.submit "Add manufacturer to item"%>
+ <% end %>
